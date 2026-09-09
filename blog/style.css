@@ -472,6 +472,7 @@ a { color: inherit; text-decoration: none; }
 .gc-dec { background: #E6F1FB; color: #185FA5; }
 .gc-ops { background: #EAF3DE; color: #3B6D11; }
 .gc-fin { background: #FCEBEB; color: #A32D2D; }
+.gc-work { background: #F3EEE4; color: #7A5A17; }
 .gc-title {
   font-family: var(--serif);
   font-size: 16px;

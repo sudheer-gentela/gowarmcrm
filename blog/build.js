@@ -322,6 +322,7 @@ function buildFooter() {
             <li><a href="/blog#articles">Decisions</a></li>
             <li><a href="/blog#articles">Revenue Ops</a></li>
             <li><a href="/blog#articles">Finance &amp; ROI</a></li>
+            <li><a href="/blog#articles">Projects &amp; Work</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -396,7 +397,7 @@ function buildArticlesGrid() {
     const p = cfg.pages[pageKey];
     const cat   = p.category || "crm";
     const roles = p.roles    || "vps";
-    const tagClass = { crm:"gc-crm", dec:"gc-dec", ops:"gc-ops", fin:"gc-fin" }[cat] || "gc-crm";
+    const tagClass = { crm:"gc-crm", dec:"gc-dec", ops:"gc-ops", fin:"gc-fin", work:"gc-work" }[cat] || "gc-crm";
     return `
         <a href="/blog/${filename.replace('.html', '')}" class="gc-card" data-topic="${cat}" data-roles="${roles}">
           <span class="gc-tag ${tagClass}">${p.cardLabel}</span>
@@ -423,6 +424,7 @@ function buildArticlesGrid() {
           <button class="gc-pill" onclick="gcFilter(this,'dec')">Decisions</button>
           <button class="gc-pill" onclick="gcFilter(this,'ops')">Revenue Ops</button>
           <button class="gc-pill" onclick="gcFilter(this,'fin')">Finance &amp; ROI</button>
+          <button class="gc-pill" onclick="gcFilter(this,'work')">Projects &amp; Work</button>
         </div>
         <div class="gc-pills" id="gc-pills-role" style="display:none">
           <button class="gc-pill gc-on" onclick="gcFilter(this,'all')">All roles</button>
@@ -431,6 +433,7 @@ function buildArticlesGrid() {
           <button class="gc-pill" onclick="gcFilter(this,'cto')">CTO</button>
           <button class="gc-pill" onclick="gcFilter(this,'cfo')">CFO</button>
           <button class="gc-pill" onclick="gcFilter(this,'ceo')">CEO · Founder</button>
+          <button class="gc-pill" onclick="gcFilter(this,'dlv')">Ops · Delivery</button>
         </div>
         <span class="gc-count" id="gc-count">${count} articles</span>
       </div>
