@@ -152,6 +152,10 @@
       "destination": "/website/work.html"
     },
     {
+      "source": "/sales",
+      "destination": "/website/sales.html"
+    },
+    {
       "source": "/why-you-stopped-knowing",
       "destination": "/website/why-you-stopped-knowing.html"
     },
@@ -298,6 +302,10 @@
     {
       "source": "/work.md",
       "destination": "/markdown/work.md"
+    },
+    {
+      "source": "/sales.md",
+      "destination": "/markdown/sales.md"
     },
     {
       "source": "/why-you-stopped-knowing.md",

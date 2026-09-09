@@ -12,6 +12,9 @@ GoWarmCRM has two pillars on one platform, enabled per organisation. **Sales exe
 - [Execution Gap](https://gowarmcrm.com/execution-gap.md): Why CRMs track but don't execute, and the structural fix
 - [Platform Overview](https://gowarmcrm.com/platform-overview.md): All five modules — Prospecting, Sales, CLM, Service, Handover
 
+## GoWarm CRM — sales execution
+- [GoWarm CRM](https://gowarmcrm.com/sales.md): The sales execution pillar — nightly diagnostics across deals, contracts, cases, handovers and prospects, a prioritised action queue for every rep, playbooks that surface at the stage transition, and forecast health for managers and RevOps
+
 ## GoWarm Work — projects and daily work
 - [GoWarm Work](https://gowarmcrm.com/work.md): The projects and daily work pillar — stages with gates, task dependencies, a baseline frozen at start, evidence required to close, Bill of Quantities with an append-only spend ledger, timeboxed versus standing work, and daily work written once by the person doing it and read by their own day, the project task and the manager rollup. Pricing: $999/month up to 25 users, custom above that
 - [Why you stopped knowing what's happening in your own company](https://gowarmcrm.com/why-you-stopped-knowing.md): The argument — why status decks, weekly reviews, dashboards and project tools all report on the reporting rather than the work, why tools that generate work accumulate past the point of being read, and the three properties a record has to have to be worth trusting
