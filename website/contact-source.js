@@ -1,30 +1,34 @@
 /**
  * contact-source.js
  *
- * Decides which pillar a contact enquiry came from and writes it into the
- * hidden #source input on /contact, so Work leads are distinguishable from
- * Sales leads in the sheet.
+ * Drives the pillar chooser on /contact and records which product the enquiry
+ * is about, so Work leads are distinguishable from Sales leads in the sheet.
  *
- * Resolution order, first match wins:
+ * The selection lives in the hidden #source input as 'sales', 'work' or 'both'.
+ * It is preselected from, in order:
  *
- *   1. ?src= on the URL          — explicit, e.g. /contact?src=work
- *   2. the referring page path   — arriving from /work or the Work essay
- *   3. 'sales'                   — the default, unchanged from before
+ *   1. ?src= on the URL          — e.g. /contact?src=work
+ *   2. the referring page path   — arriving from a GoWarm Work page
+ *   3. 'sales'                   — the default
  *
- * Wiring: api/submit.js already writes data.formType to column J of the
- * sheet, so the submit handler only needs one more property:
+ * Wiring: api/submit.js already writes data.formType to column J of the sheet,
+ * so the submit handler needs one more property:
  *
  *     formType: document.getElementById('source').value
  *
- * Nothing here runs unless #source exists, so the file is inert on every
- * other page.
+ * Everything here is defensive — a missing element is skipped, never thrown.
  */
 
 (function () {
   'use strict';
 
-  var ALLOWED = ['sales', 'work'];
-  var WORK_PATHS = ['/work', '/why-you-stopped-knowing'];
+  var ALLOWED = ['sales', 'work', 'both'];
+  var WORK_PATHS = [
+    '/work', '/why-you-stopped-knowing', '/daily-work-tracking',
+    '/project-tracking-software-small-business', '/vs-spreadsheets',
+    '/standing-vs-timeboxed-work'
+  ];
+  var BOTH_PATHS = ['/for-founders', '/'];
 
   function fromQuery() {
     try {
@@ -32,9 +36,7 @@
       if (!v) return null;
       v = v.toLowerCase().trim();
       return ALLOWED.indexOf(v) !== -1 ? v : null;
-    } catch (e) {
-      return null;
-    }
+    } catch (e) { return null; }
   }
 
   function fromReferrer() {
@@ -42,59 +44,56 @@
     try {
       var url = new URL(document.referrer);
       if (url.hostname !== window.location.hostname) return null;
-      var p = url.pathname.replace(/\/+$/, '');
-      for (var i = 0; i < WORK_PATHS.length; i++) {
-        if (p === WORK_PATHS[i]) return 'work';
-      }
+      var p = url.pathname.replace(/\/+$/, '') || '/';
+      if (WORK_PATHS.indexOf(p) !== -1) return 'work';
+      if (BOTH_PATHS.indexOf(p) !== -1) return 'both';
       return null;
-    } catch (e) {
-      return null;
-    }
+    } catch (e) { return null; }
   }
 
-  function apply() {
+  // Exposed for the onclick handlers on the chooser buttons.
+  window.setPillar = function (src) {
+    if (ALLOWED.indexOf(src) === -1) src = 'sales';
+
     var field = document.getElementById('source');
-    if (!field) return;
+    if (field) field.value = src;
 
-    var src = fromQuery() || fromReferrer() || 'sales';
-    field.value = src;
-
-    // Reframe the page for Work enquiries. Every selector below is optional —
-    // a missing element is skipped rather than throwing.
-    if (src !== 'work') return;
-
-    var heading = document.querySelector('.contact-form-card h2');
-    if (heading) heading.textContent = 'Book Your Walkthrough';
-
-    var button = document.querySelector('.contact-form-card #form-wrap .btn-primary');
-    if (button) button.textContent = 'Request Your Walkthrough';
-
-    var role = document.getElementById('role');
-    if (role && !role.dataset.workOptions) {
-      ['Founder / MD', 'Head of Operations', 'Head of Delivery', 'Project Manager'].forEach(function (label) {
-        var opt = document.createElement('option');
-        opt.textContent = label;
-        role.insertBefore(opt, role.options[1] || null);
-      });
-      role.dataset.workOptions = '1';
+    var opts = document.querySelectorAll('.pillar-opt');
+    for (var i = 0; i < opts.length; i++) {
+      var on = opts[i].getAttribute('data-src') === src;
+      opts[i].classList.toggle('is-on', on);
+      opts[i].setAttribute('aria-pressed', on ? 'true' : 'false');
     }
 
-    var teamSize = document.getElementById('team-size');
-    if (teamSize) {
-      var label = document.querySelector('label[for="team-size"]');
-      if (label) label.textContent = 'People in the company *';
-    }
+    var salesSide = (src !== 'work');
+
+    // CRM only matters when the sales pillar is in scope
+    var crm = document.getElementById('crm-group');
+    if (crm) crm.style.display = salesSide ? '' : 'none';
+
+    // the headcount question means different things on each side
+    var label = document.getElementById('team-size-label');
+    if (label) label.textContent = salesSide ? 'Sales Team Size *' : 'People in the company *';
 
     var problem = document.getElementById('problem');
     if (problem) {
-      problem.placeholder =
-        'e.g. I cannot tell which projects have actually stopped, half the team\u2019s work is invisible, we run delivery out of a spreadsheet and a WhatsApp group...';
+      problem.placeholder = salesSide
+        ? 'e.g. deals go quiet and we only find out at the forecast review, playbooks nobody follows, a pipeline number I do not trust…'
+        : 'e.g. I cannot tell which projects have actually stopped, half the team\u2019s work is invisible, we run delivery out of a spreadsheet and a WhatsApp group…';
     }
+
+    var btn = document.getElementById('submit-btn');
+    if (btn) btn.textContent = 'Request Your Walkthrough \u2192';
+  };
+
+  function init() {
+    if (!document.getElementById('source')) return;
+    window.setPillar(fromQuery() || fromReferrer() || 'sales');
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', apply);
+    document.addEventListener('DOMContentLoaded', init);
   } else {
-    apply();
+    init();
   }
 })();

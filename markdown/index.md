@@ -1,74 +1,58 @@
-# GoWarmCRM — Sales Execution Platform
+# GoWarm — The Execution Layer for Sales and for Delivery
 
-> Your CRM tracks deals. We tell your team what to do to close them.
+> Your systems record what happened. Nothing tells anyone what to do next. GoWarm has two products on one platform, enabled per organisation: GoWarm CRM for the sales pipeline, and GoWarm Work for projects and daily work. Either runs without the other.
 
-Your pipeline is leaking revenue right now. Not because your strategy is wrong — because nothing happened after the last call. GoWarmCRM reads the signals that actually exist — emails, calendar activity, meeting patterns — not just what reps remembered to log. It surfaces exactly what needs to happen next, for every deal, every rep, every morning.
+A CRM stores the deal. A project tool stores the plan. Both answer questions about the past, and neither tells a person what to do on Tuesday morning. That gap is where deals stall, projects quietly stop, and a founder loses sight of their own company.
 
-- **Find your pipeline leaks**: https://gowarmcrm.com/diagnostic
-- **See how it works**: https://gowarmcrm.com/how-it-works
+- **GoWarm CRM — sales execution**: https://gowarmcrm.com/sales.md
+- **GoWarm Work — projects and daily work**: https://gowarmcrm.com/work.md
+- **For founders and CEOs**: https://gowarmcrm.com/for-founders.md
+- **Pricing**: https://gowarmcrm.com/pricing.md
+- **Book a demo**: https://gowarmcrm.com/contact
 
-## The numbers behind the problem
+## GoWarm CRM — the revenue side
 
-- **44%** of salespeople follow up only once before giving up — yet 80% of deals need 5+ attempts. Most pipeline rot is a persistence failure, not a fit problem.
-- **34%** of organisations trust their CRM data. GoWarmCRM reads behavioural signals from emails, calendars, and meeting patterns directly — so your diagnostics aren't limited to what reps logged.
-- **3.2×** more likely to close when reps receive structured next-action prompts at each stage transition, instead of deciding for themselves what to do next.
+Sits above Salesforce, HubSpot, Pipedrive, Zoho or Dynamics. Runs nightly diagnostics across deals, contracts, cases, handovers and prospects, then tells each rep what to do first.
 
-## Where revenue leaks today
+- A prioritised action queue for every rep, every morning
+- Signals read from email, calendar and meeting patterns, not only what was logged
+- Playbooks that surface at the moment of the stage transition
+- Forecast health, manager action overview and a RevOps view
 
-- **Deal rot** — A $120K deal goes quiet for 18 days. Your CRM still shows it as "In Progress." Nobody flags it. You find out in the QBR.
-- **Forecast blindness** — Your Q3 forecast said 72% confident. You closed at 44%. The data was in your interactions the whole time — your CRM just never told you what it meant.
-- **The handoff gap** — Your AE promised onboarding support and a custom integration. The deal closed. CS got a Slack message. The customer churned at month 8.
-- **Expansion blindness** — A $180K renewal account entered the at-risk window 60 days ago. No alert fired. No outreach happened.
-- **Playbook abandonment** — You built the playbook. You trained the team. Six months later, win rates haven't moved — because no rep opens a document at the exact moment they need it.
-- **The pipeline review lie** — Your weekly review runs on what reps remember to say and what you ask. The deals actually at risk never come up.
+For VP Sales, RevOps and CROs running multi-stage pipelines with deal values above $20K, cycles longer than 30 days, and 5–200 reps.
 
-## Why this category exists
+## GoWarm Work — the delivery side
 
-Revenue is lost in execution, not strategy.
+For projects, and for everyone whose work appears in no deal, ticket or dashboard. The record of what happened builds itself, because writing it is part of doing the job rather than a second job on top of it.
 
-You have a coherent strategy. You've hired the right people, defined the right ICP, and built a product that solves a real problem. And you're still not reliably hitting your number. The actual explanation is structural: revenue is not lost at the strategy level. It's lost in the gap between strategy and daily action.
+- Stages with gates, task dependencies, and a baseline frozen at the start
+- One line a day, stored once and read on the person's own day, against the project task, and in the manager rollup
+- Nothing is generated, so no queue grows past the point of being read
+- Bill of Quantities with an append-only spend ledger, variations kept separate
+- Timeboxed and standing work tracked separately, so a retainer is not a project permanently at 90 per cent
 
-CRM systems were built to answer one question: what happened? They store calls, track stages, and report on pipeline. They do it well. That's not the problem.
+For founders, CEOs and managing directors of companies up to 500 people in any industry — construction and interiors, engineering and manufacturing services, IT services and agencies, professional services, facilities, and internal functions.
 
-The problem is the question nobody built a system to answer: what should happen next? That gap — between what your CRM recorded and what your team does tomorrow morning — is where revenue disappears.
+## The shared argument
 
-## Who it's built for
+Systems of record were built to answer one question: what happened. The question nobody built a system to answer is what should happen next. On the revenue side that gap is a deal gone quiet for eighteen days while the CRM still reads "In Progress". On the delivery side it is a project that stopped three weeks ago and a team whose work is invisible until someone asks.
 
-GoWarmCRM is purpose-built for B2B sales teams running multi-stage pipelines — typically SaaS, professional services, or complex field sales with deal values above $20K and sales cycles longer than 30 days. You have between 5 and 200 reps, and a VP Sales or RevOps leader who owns the pipeline.
+Neither is a people problem. It is structural: the act of recording work has been separated from the act of doing it, so the record decays exactly as fast as the work speeds up — which is why it is always worst in the quarter you most need it.
 
-| Dimension | Profile |
-|---|---|
-| Team size | 5 – 200 reps with at least one dedicated manager |
-| Deal profile | $20K+ ACV, multi-stage, 30+ day sales cycle |
-| CRM | Salesforce, HubSpot, Pipedrive, and more |
-| Sector | SaaS, professional services, or complex B2B |
+## One platform, switched on per organisation
 
-## Where we read signals from
+Thirteen modules across the two products — prospecting, deals, playbooks, contracts, handovers, service, projects, daily work and more. Modules are enabled for your organisation individually, so a manufacturer can run projects and daily work with every sales module dark, a SaaS team can run the pipeline side alone, and a services firm that sells and delivers can run the whole thing on one record.
 
-Most pipeline tools read your CRM. GoWarmCRM reads your pipeline.
+## Pricing
 
-- **Email activity** — Last two-way contact date, response latency, thread frequency — read directly from email.
-- **Calendar events** — Meetings scheduled, accepted, declined, or ghosted. Whether a follow-up was booked.
-- **Meeting patterns** — Frequency over time, who's in the room, whether engagement is growing or fading.
-- **CRM fields** — Stage, deal value, owner, close date — used as one of four sources, not the only one.
+- **GoWarm CRM** — $999/month up to 20 reps and 5 manager seats, custom above that.
+- **GoWarm Work** — $999/month up to 25 users, custom above that.
 
-## How we're different
+Separate products covering different things, both priced by organisation rather than per seat. Either can be bought on its own. Running both is a combined price rather than two invoices.
 
-| | Your CRM | GoWarmCRM |
-|---|---|---|
-| Core job | Stores what happened | Tells you what to do next |
-| Pipeline view | Reports the past | Surfaces risk right now |
-| Rep experience | Data entry burden | Prioritised action queue, daily |
-| Playbooks | Static docs nobody reads | Live plays triggered by deal state |
-| AI role | Dashboards and summaries | Writes the next action — you approve |
-| Posture | Passive system of record | Proactive execution engine |
-
-## How it works (in three steps)
-
-1. **Diagnose your pipeline every night** — Rules engines run nightly across deals, contracts, cases, handovers, and prospects. Every entity scored against your configured thresholds.
-2. **Surface the exact actions to take** — Reps see a live, prioritised action queue — not a stale task list. Alerts persist intelligently.
-3. **AI enforces execution. You stay in control.** — AI drafts the specific next action for every alert. Every rep sees what to do and why. You approve before anything sends.
-
-## Book a demo
-
-Free 20-minute demo. We walk through your actual setup and show you exactly what GoWarmCRM would surface in your pipeline today. https://gowarmcrm.com/contact
+## Related reading
+- Platform modules in full: https://gowarmcrm.com/platform-overview.md
+- The execution gap: https://gowarmcrm.com/execution-gap.md
+- Why you stopped knowing what is happening: https://gowarmcrm.com/why-you-stopped-knowing.md
+- Standing versus timeboxed work: https://gowarmcrm.com/standing-vs-timeboxed-work.md
+- Contact: https://gowarmcrm.com/contact.md
