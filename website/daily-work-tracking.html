@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Work Tracking Without Timesheets | GoWarm Work</title>
+  <meta name="description" content="One line a day from the person doing the work, read on their own day, against the project task, and in the manager rollup. No timers, no screenshots, no backlog to fall behind on." />
+  <link rel="stylesheet" href="/website/style-main.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192x192.png">
+  <meta name="theme-color" content="#E8630A">
+
+  <!-- SEO/AEO:START -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://gowarmcrm.com/daily-work-tracking" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gowarmcrm.com/daily-work-tracking" />
+  <meta property="og:title" content="Daily Work Tracking Without Timesheets | GoWarm Work" />
+  <meta property="og:description" content="One line a day from the person doing the work, read on their own day, against the project task, and in the manager rollup. No timers, no screenshots, no backlog to fall behind on." />
+  <meta property="og:image" content="https://gowarmcrm.com/website/screens/og-image-work.png" />
+  <meta property="og:site_name" content="GoWarm" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@gowarmcrm" />
+  <meta name="twitter:title" content="Daily Work Tracking Without Timesheets | GoWarm Work" />
+  <meta name="twitter:description" content="One line a day from the person doing the work, read on their own day, against the project task, and in the manager rollup. No timers, no screenshots, no backlog to fall behind on." />
+  <meta name="twitter:image" content="https://gowarmcrm.com/website/screens/og-image-work.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Daily Work Tracking Without Timesheets","description":"One line a day from the person doing the work, read on their own day, against the project task, and in the manager rollup. No timers, no screenshots, no backlog to fall behind on.","url":"https://gowarmcrm.com/daily-work-tracking","publisher":{"@type":"Organization","name":"GoWarm","url":"https://gowarmcrm.com"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GoWarm Work","applicationCategory":"BusinessApplication","applicationSubCategory":"Project Management Software","operatingSystem":"Web","url":"https://gowarmcrm.com/work","description":"Daily work tracking without timesheets. One line a day written by the person doing the work, stored once and read on their own day, against the project task, and in the manager rollup. Compliance is measured against working days rather than generated tasks.","featureList":["One line a day per piece of work","Controlled activity vocabulary with a manager merge queue","Recurring and assigned work","Compliance measured against working days and a holiday calendar","Manager rollup and per-person timeline","No timers, screenshots or idle detection"],"offers":[{"@type":"Offer","name":"Work","price":"999","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"999","priceCurrency":"USD","billingDuration":"P1M"},"description":"Up to 25 users, priced by organisation rather than per seat."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is daily work tracking?","acceptedAnswer":{"@type":"Answer","text":"Daily work tracking is a short written record of what a person did on a piece of work, made by that person on the day. It is not a timesheet and not an activity monitor. The purpose is to make ordinary work visible to the company without anyone having to ask, so a manager can see what a team has been doing and a person's contribution is not invisible by default."}},{"@type":"Question","name":"Is daily work tracking the same as a timesheet?","acceptedAnswer":{"@type":"Answer","text":"No. A timesheet asks how many hours went where, which turns work into an accounting exercise and gets filled in on Friday from memory. Daily work tracking asks what happened, in one line, on the day it happened. GoWarm Work has no timers, no screenshots, no idle detection and no productivity scores. The measure a manager sees is whether work was recorded on a working day, not how someone spent their hours."}},{"@type":"Question","name":"Will people actually log their work every day?","acceptedAnswer":{"@type":"Answer","text":"The bar has to be low enough to survive a busy week. One line, written where the person already is, chosen from a controlled list with a free-text escape hatch that never blocks anyone. Nothing generates entries, so there is no backlog to fall behind on and a missed day simply stays blank. Anything heavier gets abandoned in week three."}},{"@type":"Question","name":"How do you measure whether people are logging?","acceptedAnswer":{"@type":"Answer","text":"Days logged divided by working days in the window, where the denominator comes from that person's schedule and your holiday calendar. It compares properly across people on different schedules and it does not degrade over time, because no system is adding rows that inflate the number."}},{"@type":"Question","name":"What stops the activity list becoming a mess?","acceptedAnswer":{"@type":"Answer","text":"A controlled vocabulary. People pick from a list rather than typing free text, so three spellings of one activity do not become three lines in the manager rollup. When someone needs something that is not on the list they use Other, which never blocks them and instead feeds a queue the manager promotes into the list or merges into an existing entry."}},{"@type":"Question","name":"Does the same entry have to be typed in more than once?","acceptedAnswer":{"@type":"Answer","text":"No. An update posted on a project task is the person's daily work entry \u2014 the same stored row, not a copy. It is read by their own day view, by the task on the project, and by their manager's rollup. Editing it from any of the three edits the one row."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://gowarmcrm.com/"},{"@type":"ListItem","position":2,"name":"GoWarm Work","item":"https://gowarmcrm.com/work"},{"@type":"ListItem","position":3,"name":"Daily Work Tracking","item":"https://gowarmcrm.com/daily-work-tracking"}]}</script>
+  <!-- SEO/AEO:END -->
+
+  <style>
+    .pg-hero { padding: 72px 0 58px; border-bottom: 1px solid var(--border); }
+    .pg-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--rust); display: block; margin-bottom: 18px; }
+    .pg-hero h1 { font-family: var(--serif); font-size: 48px; font-weight: 700; color: var(--ink); line-height: 1.1; letter-spacing: -0.5px; margin-bottom: 22px; max-width: 800px; }
+    .pg-hero h1 em { font-style: italic; color: var(--rust); }
+    .pg-sub { font-family: var(--body-serif); font-size: 18px; color: var(--ink-3); line-height: 1.7; font-weight: 300; max-width: 640px; margin-bottom: 30px; }
+    .pg-cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .pg-sec { padding: 68px 0; border-bottom: 1px solid var(--border); }
+    .pg-sec.alt { background: var(--cream-2); }
+    .pg-sec.dark { background: var(--ink); }
+    .pg-h2 { font-family: var(--serif); font-size: 33px; font-weight: 700; color: var(--ink); line-height: 1.2; margin-bottom: 16px; max-width: 760px; }
+    .pg-lede { font-family: var(--body-serif); font-size: 18px; color: var(--ink-3); line-height: 1.75; font-weight: 300; max-width: 680px; margin-bottom: 30px; }
+    .pg-p { font-family: var(--body-serif); font-size: 16px; color: var(--ink-2); line-height: 1.85; font-weight: 300; margin-bottom: 18px; max-width: 680px; }
+    .pg-p strong { color: var(--ink); font-weight: 600; font-family: var(--sans); font-size: 15px; }
+    .pg-p a, .pg-lede a { color: var(--rust); text-decoration: underline; text-underline-offset: 3px; }
+    .pg-sec.dark .pg-h2 { color: #fff; }
+    .pg-sec.dark .pg-p { color: rgba(255,255,255,0.7); }
+    .pg-sec.dark .pg-p strong { color: #fff; }
+
+    .pg-pull { border-left: 3px solid var(--rust); padding: 4px 0 4px 26px; margin: 30px 0; max-width: 680px; }
+    .pg-pull p { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--ink); line-height: 1.5; font-style: italic; }
+
+    .pg-rows .pg-row { display: grid; grid-template-columns: 250px 1fr; gap: 40px; padding: 30px 0; border-top: 1px solid var(--border); align-items: start; }
+    .pg-rows .pg-row:last-child { border-bottom: 1px solid var(--border); }
+    .pg-row h3 { font-family: var(--serif); font-size: 21px; font-weight: 600; color: var(--ink); line-height: 1.3; }
+    .pg-row-body { font-family: var(--body-serif); font-size: 15px; color: var(--ink-2); line-height: 1.8; font-weight: 300; max-width: 640px; }
+    .pg-row-body p { margin-bottom: 12px; }
+    .pg-row-body p:last-child { margin-bottom: 0; }
+    .pg-row-body strong { color: var(--ink); font-weight: 600; font-family: var(--sans); font-size: 14px; }
+
+    .pg-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 30px; }
+    .pg-cards.two { grid-template-columns: 1fr 1fr; gap: 22px; }
+    .pg-card { background: #fff; border: 1px solid var(--border); border-radius: 9px; padding: 26px 24px; }
+    .pg-card.accent { border-left: 3px solid var(--rust); }
+    .pg-card h4 { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-bottom: 9px; line-height: 1.3; }
+    .pg-card p { font-family: var(--body-serif); font-size: 14.5px; color: var(--ink-3); line-height: 1.7; font-weight: 300; }
+    .pg-card ul { list-style: none; margin-top: 10px; }
+    .pg-card ul li { font-size: 13.5px; color: var(--ink-2); line-height: 1.55; padding: 7px 0 7px 17px; position: relative; }
+    .pg-card ul li::before { content: ""; position: absolute; left: 0; top: 15px; width: 5px; height: 5px; border-radius: 50%; background: var(--rust); }
+
+    .pg-shot { background: #fff; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin: 34px 0; max-width: 900px; }
+    .pg-shot img { width: 100%; height: auto; display: block; border-bottom: 1px solid var(--border); }
+    .pg-shot figcaption { padding: 18px 22px; font-family: var(--body-serif); font-size: 14px; color: var(--ink-3); line-height: 1.65; font-weight: 300; }
+    .pg-shot figcaption b { font-family: var(--sans); font-size: 13.5px; color: var(--ink); font-weight: 600; display: block; margin-bottom: 4px; }
+
+    .dgm-wrap { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 28px 32px 24px; margin: 32px 0; max-width: 860px; }
+    .dgm { width: 100%; height: auto; display: block; }
+    .dgm text { font-family: var(--sans); }
+    .dgm .t-ink { fill: var(--ink); }
+    .dgm .t-mid { fill: var(--ink-3); }
+    .dgm .t-soft { fill: var(--ink-4); }
+    .dgm .t-rust { fill: var(--rust); }
+    .dgm .bx { fill: #fff; stroke: var(--border); stroke-width: 1.2; }
+    .dgm .bx-cream { fill: var(--cream-2); stroke: var(--border); stroke-width: 1.2; }
+    .dgm .bx-rust { fill: var(--rust-light); stroke: var(--rust); stroke-width: 1.5; }
+    .dgm .ln { stroke: var(--ink-4); stroke-width: 1.2; fill: none; }
+    .dgm .ln-rust { stroke: var(--rust); stroke-width: 1.8; fill: none; }
+    .dgm .ln-dash { stroke: var(--ink-4); stroke-width: 1.2; fill: none; stroke-dasharray: 4 4; }
+    .dgm-cap { font-family: var(--body-serif); font-size: 14px; color: var(--ink-3); line-height: 1.65; font-weight: 300; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border); }
+
+    .pg-faq { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 44px; margin-top: 30px; }
+    .pg-faq h4 { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+    .pg-faq p { font-family: var(--body-serif); font-size: 14px; color: var(--ink-3); line-height: 1.7; font-weight: 300; }
+
+    .pg-next { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+
+    @media (max-width: 900px) {
+      .pg-hero h1 { font-size: 34px; }
+      .pg-h2 { font-size: 27px; }
+      .pg-rows .pg-row { grid-template-columns: 1fr; gap: 12px; }
+      .pg-cards, .pg-cards.two { grid-template-columns: 1fr; }
+      .pg-faq { grid-template-columns: 1fr; }
+      .dgm-wrap { padding: 18px 16px 16px; }
+      .pg-pull p { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-nav">
+    <div class="container">
+      <a href="/" class="nav-logo" style="display:flex;align-items:center;"><svg width="22" height="22" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:7px;flex-shrink:0"><rect width="72" height="72" rx="16" fill="#E8630A"/><path d="M36 10 C26 18 14 27 16 44 C18 57 27 66 36 70 C45 66 54 57 56 44 C58 27 46 18 36 10Z" fill="#F5A623"/><path d="M36 26 C32 32 27 39 29 47 C31 53 34 58 36 61 C38 58 41 53 43 47 C45 39 40 32 36 26Z" fill="#FDE68A"/><path d="M23 47 L27 59 L32 50 L36 57 L40 50 L45 59 L49 47" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95"/></svg>GoWarm<i class="nav-sec">Work</i></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/sales">GoWarm CRM</a></li>
+          <li><a href="/work" class="active">GoWarm Work</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/blog">GoWarm Insights</a></li>
+          <li><a href="/contact" class="nav-cta">Book a Demo</a></li>
+        </ul>
+      </nav>
+      <button class="nav-hamburger" aria-label="Open menu" onclick="toggleMobileNav()"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="pg-hero">
+    <div class="container">
+      <span class="pg-eyebrow">GoWarm Work · Daily work</span>
+      <h1>Daily work tracking that is <em>one line</em>, not a timesheet.</h1>
+      <p class="pg-sub">Half your company does work that appears in no deal, no ticket and no dashboard. Right now the only way to find out what they did is to ask them. GoWarm Work makes that record build itself — one short line a day, written by the person doing the work, read wherever it is needed.</p>
+      <div class="pg-cta-row">
+        <a href="/contact?src=work" class="btn btn-primary">Book a walkthrough</a>
+        <a href="/work" class="btn btn-outline">See the whole product</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE SPREADSHEET -->
+  <section class="pg-sec">
+    <div class="container">
+      <h2 class="pg-h2">You already have daily work tracking. It is a shared spreadsheet.</h2>
+      <p class="pg-lede">Almost every company under 500 people has one. A tab per person or a tab per month, filled in on Friday from memory, read by nobody, and quietly abandoned within two quarters.</p>
+      <p class="pg-p">It fails for three reasons, and they are worth naming separately because they need different fixes.</p>
+      <p class="pg-p"><strong>It is a separate job.</strong> Opening a sheet and describing your week is work about work, so it competes with the work and loses. The version that survives is one where writing the line is part of doing the task, not an errand afterwards.</p>
+      <p class="pg-p"><strong>Nothing is comparable.</strong> One person writes "client call", another writes "Call with client", a third writes "customer discussion". Three spellings of one activity become three lines in any summary, so the sheet can be read but never counted.</p>
+      <p class="pg-p"><strong>Nobody can tell absence from silence.</strong> A blank cell might mean a quiet day, a holiday, or that the person stopped filling it in six weeks ago. Without a working calendar underneath, the sheet cannot distinguish the three, so it cannot support a single reliable statement about anything.</p>
+      <div class="pg-pull">
+        <p>The point is not that people are undisciplined. It is that the sheet asks for a second job and gives nothing back to the person doing it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAY IT ONCE -->
+  <section class="pg-sec alt">
+    <div class="container">
+      <h2 class="pg-h2">Say it once. Three people get their answer.</h2>
+      <p class="pg-lede">The line a person writes against a project task <em>is</em> their daily work entry. Not a copy of it, not a synchronised version — the same stored row.</p>
+      <div class="dgm-wrap">
+        <svg class="dgm" viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p2dt p2dd">
+          <title id="p2dt">One entry, three places</title>
+          <desc id="p2dd">A person writes a single line of work once. That one stored entry is read by their own day view, by the task on the project, and by their manager's rollup. No copies are made and nothing is synchronised.</desc>
+          <text x="0" y="18" class="t-soft" font-size="12" letter-spacing="1.6">WRITTEN ONCE</text>
+          <text x="700" y="18" class="t-soft" font-size="12" letter-spacing="1.6" text-anchor="end">READ IN THREE PLACES</text>
+          <rect x="0" y="112" width="128" height="76" rx="8" class="bx-cream"/>
+          <text x="64" y="142" class="t-ink" font-size="15" font-weight="600" text-anchor="middle">The person</text>
+          <text x="64" y="163" class="t-mid" font-size="13" text-anchor="middle">doing the work</text>
+          <path d="M132 150 H172" class="ln-rust"/>
+          <path d="M166 145 L174 150 L166 155 Z" fill="#E8630A"/>
+          <rect x="178" y="96" width="250" height="108" rx="9" class="bx-rust"/>
+          <text x="196" y="124" class="t-rust" font-size="11" letter-spacing="1.6">ONE ENTRY · ONE ROW</text>
+          <text x="196" y="150" class="t-ink" font-size="14">&#8220;Cast the second slab.</text>
+          <text x="196" y="170" class="t-ink" font-size="14">3 of 5 bays done, rebar</text>
+          <text x="196" y="190" class="t-ink" font-size="14">for bay 4 arrives Thursday.&#8221;</text>
+          <path d="M432 150 C468 150 468 62 500 62" class="ln"/>
+          <path d="M432 150 H500" class="ln"/>
+          <path d="M432 150 C468 150 468 238 500 238" class="ln"/>
+          <path d="M494 57 L504 62 L494 67 Z" fill="#9B978F"/>
+          <path d="M494 145 L504 150 L494 155 Z" fill="#9B978F"/>
+          <path d="M494 233 L504 238 L494 243 Z" fill="#9B978F"/>
+          <rect x="508" y="36" width="192" height="52" rx="8" class="bx"/>
+          <text x="526" y="60" class="t-ink" font-size="14" font-weight="600">Their own day</text>
+          <text x="526" y="78" class="t-mid" font-size="12">what I did today</text>
+          <rect x="508" y="124" width="192" height="52" rx="8" class="bx"/>
+          <text x="526" y="148" class="t-ink" font-size="14" font-weight="600">The task on the project</text>
+          <text x="526" y="166" class="t-mid" font-size="12">where the work stands</text>
+          <rect x="508" y="212" width="192" height="52" rx="8" class="bx"/>
+          <text x="526" y="236" class="t-ink" font-size="14" font-weight="600">The manager's rollup</text>
+          <text x="526" y="254" class="t-mid" font-size="12">who is on what</text>
+          <text x="303" y="232" class="t-mid" font-size="13" text-anchor="middle">Stored in exactly one place.</text>
+          <text x="303" y="252" class="t-mid" font-size="13" text-anchor="middle">No copy, nothing to keep in step.</text>
+        </svg>
+        <p class="dgm-cap">Two stored copies would need synchronising, and the first time two screens disagree, both stop being believed. One row removes the possibility.</p>
+      </div>
+      <figure class="pg-shot">
+        <img src="/website/screens/work-myday.png" alt="My day in GoWarm Work: everything one person is carrying, with a box against each item for what they did today" loading="lazy" width="1920" height="870" />
+        <figcaption><b>My day</b>Everything one person is carrying, with a box against each for what they did today. Two minutes at the end of the day, and no other form to fill anywhere.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- NOTHING GENERATED -->
+  <section class="pg-sec">
+    <div class="container">
+      <h2 class="pg-h2">Nothing generates an entry, so there is nothing to fall behind on.</h2>
+      <p class="pg-p">No scheduler creates a daily row for anyone. A day with no entry is an absence, not an unfinished item sitting in a queue. That single decision is what keeps the system readable in month six.</p>
+      <div class="dgm-wrap">
+        <svg class="dgm" viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p2qt p2qd">
+          <title id="p2qt">A generated queue against a written record</title>
+          <desc id="p2qd">On the left, a queue of automatically generated items climbs from 389 to 541 to 583 and then sits flat, past the point at which anyone reads it. On the right, entries written by people appear on the days work happened, and days nobody worked on it stay blank.</desc>
+          <text x="0" y="14" class="t-soft" font-size="11.5" letter-spacing="1.4">A SYSTEM THAT GENERATES WORK</text>
+          <path d="M0 196 H286" class="ln"/>
+          <path d="M0 76 H286" class="ln-dash"/>
+          <text x="286" y="70" class="t-soft" font-size="11" text-anchor="end">past the point it is read</text>
+          <path d="M6 186 L70 150 L134 104 L198 92 L286 92" class="ln-rust" stroke-width="2.2"/>
+          <circle cx="70" cy="150" r="3.5" fill="#E8630A"/>
+          <circle cx="134" cy="104" r="3.5" fill="#E8630A"/>
+          <circle cx="198" cy="92" r="3.5" fill="#E8630A"/>
+          <text x="70" y="142" class="t-mid" font-size="11.5" text-anchor="middle">389</text>
+          <text x="134" y="96" class="t-mid" font-size="11.5" text-anchor="middle">541</text>
+          <text x="212" y="84" class="t-ink" font-size="11.5" font-weight="600">583</text>
+          <text x="242" y="110" class="t-soft" font-size="11" text-anchor="middle">19 days, flat</text>
+          <text x="0" y="216" class="t-mid" font-size="12">Every reminder in that period: unopened.</text>
+          <path d="M320 8 V216" class="ln" stroke-dasharray="3 5"/>
+          <text x="352" y="14" class="t-soft" font-size="11.5" letter-spacing="1.4">A RECORD ONLY PEOPLE WRITE</text>
+          <path d="M352 196 H640" class="ln"/>
+          <g fill="#E8630A">
+            <rect x="356" y="150" width="16" height="46" rx="3"/>
+            <rect x="388" y="150" width="16" height="46" rx="3"/>
+            <rect x="452" y="150" width="16" height="46" rx="3"/>
+            <rect x="484" y="150" width="16" height="46" rx="3"/>
+            <rect x="516" y="150" width="16" height="46" rx="3"/>
+            <rect x="580" y="150" width="16" height="46" rx="3"/>
+            <rect x="612" y="150" width="16" height="46" rx="3"/>
+          </g>
+          <g fill="#EAE7E0">
+            <rect x="420" y="150" width="16" height="46" rx="3"/>
+            <rect x="548" y="150" width="16" height="46" rx="3"/>
+          </g>
+          <path d="M420 138 V128 H436 V138" class="ln"/>
+          <text x="428" y="122" class="t-soft" font-size="11" text-anchor="middle">nobody worked on it</text>
+          <text x="352" y="216" class="t-mid" font-size="12">A blank day stays blank. There is no backlog.</text>
+        </svg>
+        <p class="dgm-cap">Generated items arrive on a schedule; attention does not. The only queue that cannot outrun its reader is one nothing adds to automatically.</p>
+      </div>
+      <p class="pg-p">Compliance is therefore a straightforward number: <strong>days logged divided by working days</strong> in the window, with the denominator taken from each person's schedule and your holiday calendar. It compares properly between someone on a five-day week and someone on six, it does not inflate over time, and it cannot be gamed by a system quietly adding rows.</p>
+    </div>
+  </section>
+
+  <!-- VOCABULARY -->
+  <section class="pg-sec alt">
+    <div class="container">
+      <h2 class="pg-h2">A controlled list, with an escape hatch that never blocks anyone.</h2>
+      <p class="pg-lede">The tension in every logging system: a fixed list is countable but frustrating, and free text is easy but useless in aggregate. The resolution is to allow both and curate the boundary.</p>
+      <div class="pg-rows">
+        <div class="pg-row">
+          <h3>People pick from a list</h3>
+          <div class="pg-row-body"><p>Activity types are defined for your organisation, so what appears in a rollup is countable. Training, site work, client call, review, whatever your business actually does.</p></div>
+        </div>
+        <div class="pg-row">
+          <h3>"Other" is always available</h3>
+          <div class="pg-row-body"><p>When the list does not have what someone needs, they type it and carry on. Nobody is ever blocked from logging because the vocabulary was incomplete, which is the failure that kills adoption in the first month.</p></div>
+        </div>
+        <div class="pg-row">
+          <h3>The manager curates what accumulates</h3>
+          <div class="pg-row-body"><p>Everything entered as Other lands in a queue. The manager promotes the ones that turn out to matter into the real list, and merges the near-duplicates into existing entries. The vocabulary grows out of what people actually do rather than what somebody guessed in week one.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANAGER VIEW -->
+  <section class="pg-sec">
+    <div class="container">
+      <h2 class="pg-h2">What the manager gets, without asking anyone.</h2>
+      <p class="pg-p">Each person's logging record sits beside their open and overdue project tasks, so the two questions a manager actually has — is this person's work visible, and is it on time — are answered on one screen. Expand anyone and every line they wrote is there, against the task and the project it belongs to.</p>
+      <figure class="pg-shot">
+        <img src="/website/screens/work-people.png" alt="The People screen in GoWarm Work: each team member's days logged, entries and project tasks side by side" loading="lazy" width="1920" height="870" />
+        <figcaption><b>People</b>Days logged against working days, entries, and open or overdue project tasks, per person. The answer to "what has this team been doing" without a status meeting.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- NOT SURVEILLANCE -->
+  <section class="pg-sec dark">
+    <div class="container">
+      <h2 class="pg-h2">This is not monitoring, and it is built not to be.</h2>
+      <p class="pg-p">There is no timer, no screenshot capture, no idle detection, no keystroke logging and no productivity score anywhere in the product. Not as a setting that is off by default — the capability does not exist.</p>
+      <p class="pg-p">The measure a manager sees is <strong>whether work was recorded on a working day, and what it was</strong>. Nothing about how someone spent their hours. That is a deliberately low bar, and it is the only one that survives contact with a busy team, because a record people are afraid of is a record nobody writes honestly.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="pg-sec alt">
+    <div class="container">
+      <h2 class="pg-h2">Questions we get asked</h2>
+      <div class="pg-faq">
+        <div><h4>Is this a timesheet?</h4><p>No. A timesheet asks where the hours went and gets filled in on Friday from memory. This asks what happened, in one line, on the day. There is no hour counting anywhere in the product.</p></div>
+        <div><h4>Will people actually do it?</h4><p>One line, written where they already are, from a list, with an escape hatch that never blocks them, and no backlog if they miss a day. Habits need a low floor.</p></div>
+        <div><h4>What about people who are not on projects?</h4><p>Recurring work that never completes is a first-class item, so someone whose job is maintenance, support or compliance logs against that rather than being forced into a fake project.</p></div>
+        <div><h4>Can someone log a day they missed?</h4><p>Yes, within a backfill window your organisation sets. Beyond it the day stays blank, which is the honest answer and keeps the compliance number meaningful.</p></div>
+        <div><h4>Does the manager see it in real time?</h4><p>Entries appear as they are written. There is no nightly batch and no report to run.</p></div>
+        <div><h4>What does it cost?</h4><p>$999/month for up to 25 users, custom above that, priced by organisation rather than per seat. Projects and daily work are included together — this is not a separate module you buy on top.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band-inner">
+        <div>
+          <h2>Pick the team you can see least of.</h2>
+          <p>Twenty minutes. We set up one department with its schedule, its holiday calendar and a first activity list, and you watch what a week of it actually looks like.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="/contact?src=work" class="btn btn-primary">Book a walkthrough</a>
+          <span class="cta-caption">Free · 20 min · No obligation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="site-footer"></div>
+  <script src="/website/footer.js"></script>
+  <script>function toggleMobileNav(){const l=document.querySelector('.nav-links');const v=l.style.display==='flex';l.style.display=v?'none':'flex';if(!v){l.style.flexDirection='column';l.style.position='absolute';l.style.top='60px';l.style.left='0';l.style.right='0';l.style.background='var(--cream)';l.style.padding='16px 20px';l.style.borderBottom='1px solid var(--border)';l.style.zIndex='99';l.style.gap='16px';}}</script>
+  <script src="/website/webmcp.js" defer></script>
+</body>
+</html>

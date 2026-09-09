@@ -152,6 +152,18 @@
       "destination": "/website/work.html"
     },
     {
+      "source": "/for-founders",
+      "destination": "/website/for-founders.html"
+    },
+    {
+      "source": "/daily-work-tracking",
+      "destination": "/website/daily-work-tracking.html"
+    },
+    {
+      "source": "/project-tracking-software-small-business",
+      "destination": "/website/project-tracking-software-small-business.html"
+    },
+    {
       "source": "/sales",
       "destination": "/website/sales.html"
     },
@@ -302,6 +314,18 @@
     {
       "source": "/work.md",
       "destination": "/markdown/work.md"
+    },
+    {
+      "source": "/for-founders.md",
+      "destination": "/markdown/for-founders.md"
+    },
+    {
+      "source": "/daily-work-tracking.md",
+      "destination": "/markdown/daily-work-tracking.md"
+    },
+    {
+      "source": "/project-tracking-software-small-business.md",
+      "destination": "/markdown/project-tracking-software-small-business.md"
     },
     {
       "source": "/sales.md",
