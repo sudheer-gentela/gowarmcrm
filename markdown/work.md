@@ -1,5 +1,7 @@
 # GoWarm Work — Project and Daily Work Tracking
 
+## What is GoWarm Work?
+
 > GoWarm Work is the project and daily work tracking half of the GoWarmCRM platform. It is built for companies up to 500 people in any industry — construction, manufacturing, services, agencies, professional firms — where the founder or managing director has stopped being able to see the work directly and there is nobody whose job it is to maintain a project tool. The organising principle: the record of work is a byproduct of doing it, not a second job on top of it.
 
 ## The problem it addresses

@@ -108,6 +108,12 @@
       .dgm-wrap { padding: 18px 16px 16px; }
       .pg-pull p { font-size: 19px; }
     }
+
+    .bluf { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--cream-2); padding: 30px 0; }
+    .bluf-inner { max-width: 760px; }
+    .bluf-q { font-size: 11px; font-weight: 600; letter-spacing: 1.6px; text-transform: uppercase; color: var(--rust); display: block; margin-bottom: 12px; }
+    .bluf-a { font-family: var(--body-serif); font-size: 17px; color: var(--ink); line-height: 1.75; font-weight: 300; }
+    @media (max-width: 900px) { .bluf-a { font-size: 16px; } }
   </style>
 </head>
 <body>
@@ -138,6 +144,16 @@
       <div class="pg-cta-row">
         <a href="/contact?src=work" class="btn btn-primary">Book a walkthrough</a>
         <a href="/work" class="btn btn-outline">See the whole product</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECT ANSWER (front-loaded for AI extraction) -->
+  <section class="bluf">
+    <div class="container">
+      <div class="bluf-inner">
+        <span class="bluf-q">What is daily work tracking?</span>
+        <p class="bluf-a">Daily work tracking is a short written record of what a person did on a piece of work, made by that person on the day. It is not a timesheet and not an activity monitor — there are no timers, screenshots or idle detection. In GoWarm Work it is one line, chosen from a controlled activity list, stored once and read on the person's own day, against the project task, and in their manager's rollup. Compliance is days logged divided by working days.</p>
       </div>
     </div>
   </section>

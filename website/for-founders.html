@@ -108,6 +108,12 @@
       .dgm-wrap { padding: 18px 16px 16px; }
       .pg-pull p { font-size: 19px; }
     }
+
+    .bluf { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--cream-2); padding: 30px 0; }
+    .bluf-inner { max-width: 760px; }
+    .bluf-q { font-size: 11px; font-weight: 600; letter-spacing: 1.6px; text-transform: uppercase; color: var(--rust); display: block; margin-bottom: 12px; }
+    .bluf-a { font-family: var(--body-serif); font-size: 17px; color: var(--ink); line-height: 1.75; font-weight: 300; }
+    @media (max-width: 900px) { .bluf-a { font-size: 16px; } }
   </style>
 </head>
 <body>
@@ -138,6 +144,16 @@
       <div class="pg-cta-row">
         <a href="/contact" class="btn btn-primary">Book a walkthrough</a>
         <a href="/why-you-stopped-knowing" class="btn btn-outline">Read the long version</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECT ANSWER (front-loaded for AI extraction) -->
+  <section class="bluf">
+    <div class="container">
+      <div class="bluf-inner">
+        <span class="bluf-q">Why do founders lose sight of what is happening in their own company?</span>
+        <p class="bluf-a">Direct observation stops scaling past a certain size, and what replaces it is description — a slide assembled last night, a sentence in a review, a dashboard nobody set thresholds on. The same gap runs down both sides of the business: on the revenue side a deal goes quiet for eighteen days while the CRM still reads In Progress; on the delivery side a project stopped three weeks ago and half the team's work is invisible until someone asks.</p>
       </div>
     </div>
   </section>

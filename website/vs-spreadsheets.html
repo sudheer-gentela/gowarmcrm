@@ -108,6 +108,12 @@
       .dgm-wrap { padding: 18px 16px 16px; }
       .pg-pull p { font-size: 19px; }
     }
+
+    .bluf { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--cream-2); padding: 30px 0; }
+    .bluf-inner { max-width: 760px; }
+    .bluf-q { font-size: 11px; font-weight: 600; letter-spacing: 1.6px; text-transform: uppercase; color: var(--rust); display: block; margin-bottom: 12px; }
+    .bluf-a { font-family: var(--body-serif); font-size: 17px; color: var(--ink); line-height: 1.75; font-weight: 300; }
+    @media (max-width: 900px) { .bluf-a { font-size: 16px; } }
   </style>
 </head>
 <body>
@@ -138,6 +144,16 @@
       <div class="pg-cta-row">
         <a href="/contact?src=work" class="btn btn-primary">Book a walkthrough</a>
         <a href="/work" class="btn btn-outline">See GoWarm Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECT ANSWER (front-loaded for AI extraction) -->
+  <section class="bluf">
+    <div class="container">
+      <div class="bluf-inner">
+        <span class="bluf-q">When does a shared spreadsheet stop working for project tracking?</span>
+        <p class="bluf-a">Not at a headcount, but at four conditions: more than one person writes to the same record in the same week, the record has to outlive somebody's memory, a number from it is used to make a decision, or you cannot tell from the sheet whether work is happening at all. A spreadsheet structurally cannot tell absence from silence, enforce a sequence, require evidence, aggregate free text, keep a ledger, or remember what a date used to be.</p>
       </div>
     </div>
   </section>
