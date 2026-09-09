@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoWarm Work vs a Shared Spreadsheet | When the Sheet Stops Working</title>
+  <meta name="description" content="A shared sheet tracks projects and daily work until it cannot. Six things a spreadsheet structurally cannot do, what replaces each one, and when the sheet is still the right answer." />
+  <link rel="stylesheet" href="/website/style-main.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192x192.png">
+  <meta name="theme-color" content="#E8630A">
+
+  <!-- SEO/AEO:START -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://gowarmcrm.com/vs-spreadsheets" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gowarmcrm.com/vs-spreadsheets" />
+  <meta property="og:title" content="GoWarm Work vs a Shared Spreadsheet | When the Sheet Stops Working" />
+  <meta property="og:description" content="A shared sheet tracks projects and daily work until it cannot. Six things a spreadsheet structurally cannot do, what replaces each one, and when the sheet is still the right answer." />
+  <meta property="og:image" content="https://gowarmcrm.com/website/screens/og-image-work.png" />
+  <meta property="og:site_name" content="GoWarm" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@gowarmcrm" />
+  <meta name="twitter:title" content="GoWarm Work vs a Shared Spreadsheet | When the Sheet Stops Working" />
+  <meta name="twitter:description" content="A shared sheet tracks projects and daily work until it cannot. Six things a spreadsheet structurally cannot do, what replaces each one, and when the sheet is still the right answer." />
+  <meta name="twitter:image" content="https://gowarmcrm.com/website/screens/og-image-work.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"GoWarm Work vs a Shared Spreadsheet","description":"A shared sheet tracks projects and daily work until it cannot. Six things a spreadsheet structurally cannot do, what replaces each one, and when the sheet is still the right answer.","url":"https://gowarmcrm.com/vs-spreadsheets","publisher":{"@type":"Organization","name":"GoWarm","url":"https://gowarmcrm.com"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GoWarm Work","applicationCategory":"BusinessApplication","applicationSubCategory":"Project Management Software","operatingSystem":"Web","url":"https://gowarmcrm.com/work","description":"Project and daily work tracking for companies that have outgrown a shared spreadsheet. Working-calendar compliance, stage gates, required evidence, a controlled activity vocabulary, an append-only spend ledger and a frozen baseline.","offers":[{"@type":"Offer","name":"Work","price":"999","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"999","priceCurrency":"USD","billingDuration":"P1M"},"description":"Up to 25 users, priced by organisation rather than per seat."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"When does a shared spreadsheet stop working for project tracking?","acceptedAnswer":{"@type":"Answer","text":"Not at a headcount, but at a set of conditions. The sheet stops working when more than one person edits it in the same week, when a blank cell could mean three different things, when someone needs to know what happened three months ago, or when a number from the sheet is used to make a decision. Any one of those turns the sheet from a useful list into a document that has to be defended."}},{"@type":"Question","name":"What can a spreadsheet not do for project tracking?","acceptedAnswer":{"@type":"Answer","text":"Six things, all structural rather than a matter of building a better sheet. It cannot tell absence from silence, because a blank cell has no working calendar behind it. It cannot enforce a sequence, so step four can be marked done before step three. It cannot require evidence, so done means whatever the person typing says it means. It cannot aggregate free text, so three spellings of one activity become three lines. It cannot keep a ledger, because any figure can be edited in place. And it has no history, so a changed date leaves no trace of what it was."}},{"@type":"Question","name":"Is a spreadsheet ever the right answer?","acceptedAnswer":{"@type":"Answer","text":"Yes, and being honest about that matters. For one project, one owner and a horizon under a month, a sheet is faster to set up, free, and everyone already knows how to use it. Software is worth it when several people write to the same record, when the record has to survive longer than anyone's memory, or when a decision will be made from a number the sheet produced."}},{"@type":"Question","name":"How do we move off a spreadsheet without losing what is in it?","acceptedAnswer":{"@type":"Answer","text":"A project checklist can be imported rather than retyped, and the baseline is frozen at the point the plan is committed rather than when the project was first created \u2014 so you can bring in an in-flight project and still measure drift from there. What does not transfer is history the sheet never captured, which is usually most of it."}},{"@type":"Question","name":"Will people not just keep using the spreadsheet anyway?","acceptedAnswer":{"@type":"Answer","text":"They will, if the replacement asks for more effort than the sheet did. The bar has to be lower, not higher: one line a day written where the person already is, chosen from a list, with an escape hatch that never blocks anyone. A shadow spreadsheet appearing three months in is a reliable sign the tool asked for too much."}},{"@type":"Question","name":"What about a spreadsheet plus a messaging group?","acceptedAnswer":{"@type":"Answer","text":"That is the real system in most companies under 500 people, and pretending otherwise is why rollouts fail. The sheet holds the plan and the group holds the decisions, with nothing connecting them. GoWarm Work lets an administrator attach the conversations your teams already use to the project they belong to, on channels your organisation chooses, so that history lands against the right work instead of scrolling away."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://gowarmcrm.com/"},{"@type":"ListItem","position":2,"name":"GoWarm Work","item":"https://gowarmcrm.com/work"},{"@type":"ListItem","position":3,"name":"vs a Shared Spreadsheet","item":"https://gowarmcrm.com/vs-spreadsheets"}]}</script>
+  <!-- SEO/AEO:END -->
+
+  <style>
+    .pg-hero { padding: 72px 0 58px; border-bottom: 1px solid var(--border); }
+    .pg-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--rust); display: block; margin-bottom: 18px; }
+    .pg-hero h1 { font-family: var(--serif); font-size: 48px; font-weight: 700; color: var(--ink); line-height: 1.1; letter-spacing: -0.5px; margin-bottom: 22px; max-width: 800px; }
+    .pg-hero h1 em { font-style: italic; color: var(--rust); }
+    .pg-sub { font-family: var(--body-serif); font-size: 18px; color: var(--ink-3); line-height: 1.7; font-weight: 300; max-width: 640px; margin-bottom: 30px; }
+    .pg-cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .pg-sec { padding: 68px 0; border-bottom: 1px solid var(--border); }
+    .pg-sec.alt { background: var(--cream-2); }
+    .pg-sec.dark { background: var(--ink); }
+    .pg-h2 { font-family: var(--serif); font-size: 33px; font-weight: 700; color: var(--ink); line-height: 1.2; margin-bottom: 16px; max-width: 760px; }
+    .pg-lede { font-family: var(--body-serif); font-size: 18px; color: var(--ink-3); line-height: 1.75; font-weight: 300; max-width: 680px; margin-bottom: 30px; }
+    .pg-p { font-family: var(--body-serif); font-size: 16px; color: var(--ink-2); line-height: 1.85; font-weight: 300; margin-bottom: 18px; max-width: 680px; }
+    .pg-p strong { color: var(--ink); font-weight: 600; font-family: var(--sans); font-size: 15px; }
+    .pg-p a, .pg-lede a { color: var(--rust); text-decoration: underline; text-underline-offset: 3px; }
+    .pg-sec.dark .pg-h2 { color: #fff; }
+    .pg-sec.dark .pg-p { color: rgba(255,255,255,0.7); }
+    .pg-sec.dark .pg-p strong { color: #fff; }
+
+    .pg-pull { border-left: 3px solid var(--rust); padding: 4px 0 4px 26px; margin: 30px 0; max-width: 680px; }
+    .pg-pull p { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--ink); line-height: 1.5; font-style: italic; }
+
+    .pg-rows .pg-row { display: grid; grid-template-columns: 250px 1fr; gap: 40px; padding: 30px 0; border-top: 1px solid var(--border); align-items: start; }
+    .pg-rows .pg-row:last-child { border-bottom: 1px solid var(--border); }
+    .pg-row h3 { font-family: var(--serif); font-size: 21px; font-weight: 600; color: var(--ink); line-height: 1.3; }
+    .pg-row-body { font-family: var(--body-serif); font-size: 15px; color: var(--ink-2); line-height: 1.8; font-weight: 300; max-width: 640px; }
+    .pg-row-body p { margin-bottom: 12px; }
+    .pg-row-body p:last-child { margin-bottom: 0; }
+    .pg-row-body strong { color: var(--ink); font-weight: 600; font-family: var(--sans); font-size: 14px; }
+
+    .pg-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 30px; }
+    .pg-cards.two { grid-template-columns: 1fr 1fr; gap: 22px; }
+    .pg-card { background: #fff; border: 1px solid var(--border); border-radius: 9px; padding: 26px 24px; }
+    .pg-card.accent { border-left: 3px solid var(--rust); }
+    .pg-card h4 { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-bottom: 9px; line-height: 1.3; }
+    .pg-card p { font-family: var(--body-serif); font-size: 14.5px; color: var(--ink-3); line-height: 1.7; font-weight: 300; }
+    .pg-card ul { list-style: none; margin-top: 10px; }
+    .pg-card ul li { font-size: 13.5px; color: var(--ink-2); line-height: 1.55; padding: 7px 0 7px 17px; position: relative; }
+    .pg-card ul li::before { content: ""; position: absolute; left: 0; top: 15px; width: 5px; height: 5px; border-radius: 50%; background: var(--rust); }
+
+    .pg-shot { background: #fff; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin: 34px 0; max-width: 900px; }
+    .pg-shot img { width: 100%; height: auto; display: block; border-bottom: 1px solid var(--border); }
+    .pg-shot figcaption { padding: 18px 22px; font-family: var(--body-serif); font-size: 14px; color: var(--ink-3); line-height: 1.65; font-weight: 300; }
+    .pg-shot figcaption b { font-family: var(--sans); font-size: 13.5px; color: var(--ink); font-weight: 600; display: block; margin-bottom: 4px; }
+
+    .dgm-wrap { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 28px 32px 24px; margin: 32px 0; max-width: 860px; }
+    .dgm { width: 100%; height: auto; display: block; }
+    .dgm text { font-family: var(--sans); }
+    .dgm .t-ink { fill: var(--ink); }
+    .dgm .t-mid { fill: var(--ink-3); }
+    .dgm .t-soft { fill: var(--ink-4); }
+    .dgm .t-rust { fill: var(--rust); }
+    .dgm .bx { fill: #fff; stroke: var(--border); stroke-width: 1.2; }
+    .dgm .bx-cream { fill: var(--cream-2); stroke: var(--border); stroke-width: 1.2; }
+    .dgm .bx-rust { fill: var(--rust-light); stroke: var(--rust); stroke-width: 1.5; }
+    .dgm .ln { stroke: var(--ink-4); stroke-width: 1.2; fill: none; }
+    .dgm .ln-rust { stroke: var(--rust); stroke-width: 1.8; fill: none; }
+    .dgm .ln-dash { stroke: var(--ink-4); stroke-width: 1.2; fill: none; stroke-dasharray: 4 4; }
+    .dgm-cap { font-family: var(--body-serif); font-size: 14px; color: var(--ink-3); line-height: 1.65; font-weight: 300; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border); }
+
+    .pg-faq { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 44px; margin-top: 30px; }
+    .pg-faq h4 { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+    .pg-faq p { font-family: var(--body-serif); font-size: 14px; color: var(--ink-3); line-height: 1.7; font-weight: 300; }
+
+    .pg-next { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+
+    @media (max-width: 900px) {
+      .pg-hero h1 { font-size: 34px; }
+      .pg-h2 { font-size: 27px; }
+      .pg-rows .pg-row { grid-template-columns: 1fr; gap: 12px; }
+      .pg-cards, .pg-cards.two { grid-template-columns: 1fr; }
+      .pg-faq { grid-template-columns: 1fr; }
+      .dgm-wrap { padding: 18px 16px 16px; }
+      .pg-pull p { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-nav">
+    <div class="container">
+      <a href="/" class="nav-logo" style="display:flex;align-items:center;"><svg width="22" height="22" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:7px;flex-shrink:0"><rect width="72" height="72" rx="16" fill="#E8630A"/><path d="M36 10 C26 18 14 27 16 44 C18 57 27 66 36 70 C45 66 54 57 56 44 C58 27 46 18 36 10Z" fill="#F5A623"/><path d="M36 26 C32 32 27 39 29 47 C31 53 34 58 36 61 C38 58 41 53 43 47 C45 39 40 32 36 26Z" fill="#FDE68A"/><path d="M23 47 L27 59 L32 50 L36 57 L40 50 L45 59 L49 47" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95"/></svg>GoWarm<i class="nav-sec">Work</i></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/sales">GoWarm CRM</a></li>
+          <li><a href="/work" class="active">GoWarm Work</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/blog">GoWarm Insights</a></li>
+          <li><a href="/contact" class="nav-cta">Book a Demo</a></li>
+        </ul>
+      </nav>
+      <button class="nav-hamburger" aria-label="Open menu" onclick="toggleMobileNav()"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="pg-hero">
+    <div class="container">
+      <span class="pg-eyebrow">GoWarm Work · The honest comparison</span>
+      <h1>The spreadsheet is not wrong. It is just <em>out of arguments</em>.</h1>
+      <p class="pg-sub">Nearly every company under 500 people runs projects and daily work out of a shared sheet, and for a long time that is the correct decision. This page is about the point where it stops being correct, what specifically breaks, and what has to replace each broken part.</p>
+      <div class="pg-cta-row">
+        <a href="/contact?src=work" class="btn btn-primary">Book a walkthrough</a>
+        <a href="/work" class="btn btn-outline">See GoWarm Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIT WHERE DUE -->
+  <section class="pg-sec">
+    <div class="container">
+      <h2 class="pg-h2">First, what the sheet is genuinely good at.</h2>
+      <p class="pg-lede">Any comparison that opens by calling spreadsheets primitive is not worth reading. The sheet won for reasons, and they are good ones.</p>
+      <p class="pg-p">It is free. Everyone already knows how to use it, so there is no adoption problem and no training. It takes about four minutes to set up and it can be reshaped in the middle of a project without asking anyone. It imposes no opinion about how you work, which means it never gets in the way. For one project, one owner and a horizon under a month, a sheet is the right tool and reaching for software instead is an act of procrastination.</p>
+      <div class="pg-pull">
+        <p>The question is never whether the spreadsheet is good. It is whether the thing you now need is something a spreadsheet can structurally do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIX THINGS -->
+  <section class="pg-sec alt">
+    <div class="container">
+      <h2 class="pg-h2">Six things a sheet cannot do, however well you build it.</h2>
+      <p class="pg-lede">Not gaps in your formula skills. Each of these is a property the format does not have, so no amount of conditional formatting recovers it.</p>
+
+      <div class="pg-rows">
+        <div class="pg-row">
+          <h3>1. Tell absence from silence</h3>
+          <div class="pg-row-body">
+            <p>A blank cell might mean a holiday, a quiet day, or that someone stopped filling it in six weeks ago. The sheet cannot distinguish the three because it has no working calendar underneath it, which means no number derived from it can be trusted.</p>
+            <p><strong>What replaces it:</strong> a schedule and a holiday calendar per person, so a missing day is either expected or a real absence — and compliance becomes days logged divided by working days.</p>
+          </div>
+        </div>
+        <div class="pg-row">
+          <h3>2. Enforce a sequence</h3>
+          <div class="pg-row-body">
+            <p>Nothing stops row 14 being marked done before row 9. Dependencies exist in the head of whoever built the sheet, and when that person is on leave the sequence silently stops existing at all.</p>
+            <p><strong>What replaces it:</strong> task dependencies validated for circularity when they are created, and stage gates that hold the next stage shut until the current one is genuinely met.</p>
+          </div>
+        </div>
+        <div class="pg-row">
+          <h3>3. Require evidence</h3>
+          <div class="pg-row-body">
+            <p>In a sheet, "done" means whatever the person typing it believes. That is an assertion rather than a record, and six months later there is no way to tell a completed step from an optimistic one.</p>
+            <p><strong>What replaces it:</strong> a task closes with something attached — a file, a link, a note that cannot be quietly rewritten.</p>
+          </div>
+        </div>
+        <div class="pg-row">
+          <h3>4. Aggregate free text</h3>
+          <div class="pg-row-body">
+            <p>"Client call", "Call with client" and "customer discussion" are three lines in every summary you build. The sheet can be read but it cannot be counted, so it never answers a question about the whole team.</p>
+            <p><strong>What replaces it:</strong> a controlled activity vocabulary, with an "Other" escape hatch that never blocks anyone and feeds a queue the manager promotes or merges from.</p>
+          </div>
+        </div>
+        <div class="pg-row">
+          <h3>5. Keep a ledger</h3>
+          <div class="pg-row-body">
+            <p>Any figure in a sheet can be edited in place, so a cost record is a current opinion rather than a history. Correct a mistake and the mistake is gone; fold a variation into the original quantities and the project looks on budget while the reason it grew disappears.</p>
+            <p><strong>What replaces it:</strong> an append-only spend ledger of increments, rates snapshotted on every entry, corrections booked as reversals pointing at the original, and approved variations kept separate from the bill.</p>
+          </div>
+        </div>
+        <div class="pg-row">
+          <h3>6. Remember what a date used to be</h3>
+          <div class="pg-row-body">
+            <p>Change a date in a sheet and the previous one is gone. Do that four times over a project and it was never late, because there is nothing left to have been late against.</p>
+            <p><strong>What replaces it:</strong> a baseline frozen when the plan is committed, so drift is a measured difference rather than a monthly renegotiation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLANK CELL DIAGRAM -->
+  <section class="pg-sec">
+    <div class="container">
+      <h2 class="pg-h2">The clearest example: what an empty cell means.</h2>
+      <p class="pg-lede">This one is worth drawing, because it is the failure people find hardest to see. It looks like a small data-quality issue and it is actually the reason the whole sheet cannot support a decision.</p>
+      <div class="dgm-wrap">
+        <svg class="dgm" viewBox="0 0 700 268" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p4dt p4dd">
+          <title id="p4dt">What a blank cell means</title>
+          <desc id="p4dd">In a spreadsheet, an empty cell could mean the person was on holiday, had a quiet day, or stopped filling the sheet in weeks ago. Nothing distinguishes the three. With a working calendar and a holiday calendar behind the record, a blank day is either a non-working day, which is expected, or a working day with nothing logged, which is a real absence and countable.</desc>
+
+          <text x="0" y="16" class="t-soft" font-size="11.5" letter-spacing="1.5">IN A SPREADSHEET</text>
+          <rect x="0" y="30" width="300" height="44" rx="7" class="bx-cream"/>
+          <text x="150" y="58" class="t-mid" font-size="14" text-anchor="middle" font-weight="600">An empty cell</text>
+          <path d="M150 78 V96" class="ln"/>
+          <path d="M150 96 H40 V112" class="ln"/><path d="M150 96 H150 V112" class="ln"/><path d="M150 96 H260 V112" class="ln"/>
+          <rect x="0" y="116" width="86" height="58" rx="7" class="bx"/>
+          <text x="43" y="140" class="t-mid" font-size="12" text-anchor="middle">On</text>
+          <text x="43" y="156" class="t-mid" font-size="12" text-anchor="middle">holiday</text>
+          <rect x="107" y="116" width="86" height="58" rx="7" class="bx"/>
+          <text x="150" y="140" class="t-mid" font-size="12" text-anchor="middle">Quiet</text>
+          <text x="150" y="156" class="t-mid" font-size="12" text-anchor="middle">day</text>
+          <rect x="214" y="116" width="86" height="58" rx="7" class="bx"/>
+          <text x="257" y="140" class="t-mid" font-size="12" text-anchor="middle">Stopped</text>
+          <text x="257" y="156" class="t-mid" font-size="12" text-anchor="middle">6 weeks ago</text>
+          <text x="150" y="200" class="t-mid" font-size="13" text-anchor="middle">Nothing tells the three apart,</text>
+          <text x="150" y="218" class="t-mid" font-size="13" text-anchor="middle">so the sheet supports no reliable count.</text>
+
+          <path d="M340 20 V244" class="ln" stroke-dasharray="3 5"/>
+
+          <text x="380" y="16" class="t-rust" font-size="11.5" letter-spacing="1.5">WITH A WORKING CALENDAR</text>
+          <rect x="380" y="30" width="320" height="44" rx="7" class="bx-rust"/>
+          <text x="540" y="58" class="t-ink" font-size="14" text-anchor="middle" font-weight="600">A day with no entry</text>
+          <path d="M540 78 V96" class="ln"/>
+          <path d="M540 96 H448 V112" class="ln"/><path d="M540 96 H632 V112" class="ln"/>
+          <rect x="380" y="116" width="136" height="58" rx="7" class="bx"/>
+          <text x="448" y="140" class="t-mid" font-size="12" text-anchor="middle">Not a working day</text>
+          <text x="448" y="156" class="t-mid" font-size="12" text-anchor="middle">— expected, excluded</text>
+          <rect x="564" y="116" width="136" height="58" rx="7" class="bx"/>
+          <text x="632" y="140" class="t-ink" font-size="12" text-anchor="middle" font-weight="600">A working day</text>
+          <text x="632" y="156" class="t-mid" font-size="12" text-anchor="middle">with nothing logged</text>
+          <text x="540" y="200" class="t-mid" font-size="13" text-anchor="middle">Days logged ÷ working days.</text>
+          <text x="540" y="218" class="t-mid" font-size="13" text-anchor="middle">One number, comparable across people.</text>
+        </svg>
+        <p class="dgm-cap">The fix is not stricter data entry. It is putting a working calendar behind the record so the blank has only two possible meanings instead of three.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU KEEP -->
+  <section class="pg-sec alt">
+    <div class="container">
+      <h2 class="pg-h2">What has to survive the move.</h2>
+      <p class="pg-lede">Most replacements fail because they are heavier than the sheet. The properties that made the spreadsheet win have to be preserved, not traded away.</p>
+      <div class="pg-cards">
+        <div class="pg-card accent"><h4>The floor stays low</h4><p>One line a day, written where the person already is, chosen from a list. If the replacement asks for more effort than the sheet did, a shadow spreadsheet appears within three months and you have two systems instead of one.</p></div>
+        <div class="pg-card accent"><h4>Nothing generates work</h4><p>No scheduler creates rows for anyone, so there is no backlog to fall behind on. A sheet never nagged you and neither does this.</p></div>
+        <div class="pg-card accent"><h4>You can still change your mind</h4><p>The activity list is meant to be edited in the first month rather than perfected before you start, and the manager curates it from what people actually typed.</p></div>
+        <div class="pg-card"><h4>Setup stays small</h4><p>Departments, working schedules, a holiday calendar and a first activity list. Most teams are running within a week, not a quarter.</p></div>
+        <div class="pg-card"><h4>The plan comes with you</h4><p>A project checklist can be imported rather than retyped, and the baseline freezes when you commit the plan — so an in-flight project can move across and still be measured from there.</p></div>
+        <div class="pg-card"><h4>The messaging group is not ignored</h4><p>Conversations your teams already use can be attached to the project they belong to, on channels your organisation chooses, so decisions stop scrolling away.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHEN TO STAY -->
+  <section class="pg-sec dark">
+    <div class="container">
+      <h2 class="pg-h2">When you should keep the spreadsheet.</h2>
+      <p class="pg-p">One project, one owner, a horizon under a month, and no decision riding on a number the sheet produces. In that situation software is overhead and the sheet is the correct answer. Anyone who tells you otherwise is selling something.</p>
+      <p class="pg-p">The four conditions that flip it: <strong>more than one person writes to the same record in the same week</strong>; <strong>the record has to outlive somebody's memory</strong>; <strong>a number from it is used to make a decision</strong>; or <strong>you cannot tell, from the sheet alone, whether work is happening at all</strong>. Any one of those is enough. Most companies cross all four within a year of each other and only notice the last one.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="pg-sec">
+    <div class="container">
+      <h2 class="pg-h2">Questions we get asked</h2>
+      <div class="pg-faq">
+        <div><h4>Can we import the sheet?</h4><p>A project checklist can be imported rather than retyped. What cannot come across is history the sheet never captured, which is usually most of it — old dates, who changed what, what proved a step was done.</p></div>
+        <div><h4>Will people just keep using the spreadsheet?</h4><p>Only if the replacement asks for more than the sheet did. A shadow sheet appearing a few months in is a reliable sign the tool was too heavy, which is why the bar here is one line a day.</p></div>
+        <div><h4>We use the sheet plus a WhatsApp group.</h4><p>That is the real system in most companies this size. An administrator can attach the channels your organisation chooses to the project they belong to, so decisions land against the work instead of scrolling away.</p></div>
+        <div><h4>Our sheet has formulas nobody else understands.</h4><p>That is its own argument. A record that only one person can maintain is a single point of failure, and it is usually the person you can least afford to have doing data entry.</p></div>
+        <div><h4>What if we only need part of this?</h4><p>Projects and daily work come together, but modules are enabled per organisation — no sales module needs to be switched on, and you pay for the work half alone.</p></div>
+        <div><h4>What does it cost?</h4><p>$999/month for up to 25 users, custom above that, priced by organisation rather than per seat.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band-inner">
+        <div>
+          <h2>Bring the sheet.</h2>
+          <p>Twenty minutes. Open the spreadsheet you actually use, and we will set the same thing up beside it — one live project, one team, one week of logging — so you can compare the two rather than take our word for it.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="/contact?src=work" class="btn btn-primary">Book a walkthrough</a>
+          <span class="cta-caption">Free · 20 min · No obligation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="site-footer"></div>
+  <script src="/website/footer.js"></script>
+  <script>function toggleMobileNav(){const l=document.querySelector('.nav-links');const v=l.style.display==='flex';l.style.display=v?'none':'flex';if(!v){l.style.flexDirection='column';l.style.position='absolute';l.style.top='60px';l.style.left='0';l.style.right='0';l.style.background='var(--cream)';l.style.padding='16px 20px';l.style.borderBottom='1px solid var(--border)';l.style.zIndex='99';l.style.gap='16px';}}</script>
+  <script src="/website/webmcp.js" defer></script>
+</body>
+</html>

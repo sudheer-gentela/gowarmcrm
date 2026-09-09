@@ -152,6 +152,14 @@
       "destination": "/website/work.html"
     },
     {
+      "source": "/standing-vs-timeboxed-work",
+      "destination": "/website/standing-vs-timeboxed-work.html"
+    },
+    {
+      "source": "/vs-spreadsheets",
+      "destination": "/website/vs-spreadsheets.html"
+    },
+    {
       "source": "/for-founders",
       "destination": "/website/for-founders.html"
     },
@@ -314,6 +322,14 @@
     {
       "source": "/work.md",
       "destination": "/markdown/work.md"
+    },
+    {
+      "source": "/standing-vs-timeboxed-work.md",
+      "destination": "/markdown/standing-vs-timeboxed-work.md"
+    },
+    {
+      "source": "/vs-spreadsheets.md",
+      "destination": "/markdown/vs-spreadsheets.md"
     },
     {
       "source": "/for-founders.md",
