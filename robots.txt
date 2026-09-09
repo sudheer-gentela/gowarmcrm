@@ -1,43 +1,102 @@
+# https://gowarmcrm.com/robots.txt
+#
+# Stance: open. Our content may be read, cited and used as training data.
+# We want maximum eligibility across search engines, AI answer engines and
+# the visibility tools that audit them.
+#
+# Content-Signal expresses the same stance in machine-readable form:
+#   search=yes     — index us for conventional search
+#   ai-train=yes   — our content may be used as model training data
+#   ai-input=yes   — our content may be retrieved and cited in AI answers
+
 User-agent: *
-Content-Signal: search=yes, ai-train=no, ai-input=yes
+Content-Signal: search=yes, ai-train=yes, ai-input=yes
 Allow: /
 
-# Exclude non-content pages from indexing
+# Exclude non-content paths
 Disallow: /v2/
 Disallow: /api/
 
-# AI training crawlers — blocked
-User-agent: GPTBot
-Disallow: /
+# ── AI SEARCH & RETRIEVAL ────────────────────────────────────────────────
+# These fetch pages to answer a user's question and cite the source.
+# Listed explicitly because an implicit allow can be overridden by a CDN or
+# WAF rule, and losing these means losing AI citations.
 
-User-agent: ClaudeBot
-Disallow: /
+User-agent: OAI-SearchBot
+Allow: /
 
-User-agent: anthropic-ai
-Disallow: /
+User-agent: ChatGPT-User
+Allow: /
 
-User-agent: Claude-Web
-Disallow: /
+User-agent: Claude-SearchBot
+Allow: /
 
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
+User-agent: Claude-User
+Allow: /
 
 User-agent: PerplexityBot
-Disallow: /
+Allow: /
 
-User-agent: Bytespider
-Disallow: /
+User-agent: Perplexity-User
+Allow: /
 
-User-agent: Amazonbot
-Disallow: /
+User-agent: Applebot
+Allow: /
 
-User-agent: cohere-ai
-Disallow: /
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# ── AI TRAINING CRAWLERS ─────────────────────────────────────────────────
+# Allowed deliberately. Being in the training corpora is how a brand becomes
+# something a model knows without having to retrieve it.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
 
 User-agent: Meta-ExternalAgent
-Disallow: /
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# ── SEO / GEO VISIBILITY TOOLING ─────────────────────────────────────────
+# The crawlers behind the audit and AI-visibility platforms. Blocking these
+# only blinds your own reporting.
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: MJ12bot
+Allow: /
+
+User-agent: DataForSeoBot
+Allow: /
 
 Sitemap: https://gowarmcrm.com/sitemap.xml

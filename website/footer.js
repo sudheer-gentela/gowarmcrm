@@ -58,6 +58,7 @@
           <li><a href="/pipeline-execution">Pipeline Execution</a></li>
           <li><a href="/pipeline-leakage">Pipeline Leakage</a></li>
           <li><a href="/sales-forecast-accuracy">Forecast Accuracy</a></li>
+          <li><a href="/sales-execution-platform-for-saas">For SaaS Teams</a></li>
           <li><a href="/ai-shift">The AI Shift in B2B Selling</a></li>
         </ul>
       </div>
@@ -78,12 +79,14 @@
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="/blog">GoWarm Insights</a></li>
+          <li><a href="/insights">Insights Index</a></li>
+          <li><a href="/skills">Agent Skills</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 DeepConnect Technologies Inc. and GW DeepConnect Technologies Private Limited. All rights reserved.</span>
-      <span>gowarmcrm.com</span>
+      <span><a href="/privacy" style="color:rgba(255,255,255,0.45);">Privacy</a> · <a href="/terms" style="color:rgba(255,255,255,0.45);">Terms</a> · <a href="/msa" style="color:rgba(255,255,255,0.45);">MSA</a> · <a href="/dpa" style="color:rgba(255,255,255,0.45);">DPA</a></span>
     </div>
   </div>
 </footer>`;
