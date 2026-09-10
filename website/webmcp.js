@@ -171,7 +171,6 @@
     { path: '/problems', title: 'Problems We Solve', about: 'Deal rot, forecast blindness, handoff gaps, expansion blindness, playbook abandonment' },
     { path: '/pricing', title: 'Pricing', about: 'Tiers, what is included, comparison vs building in-house' },
     { path: '/execution-gap', title: 'Execution Gap', about: 'Why CRMs track but do not execute, and the structural fix' },
-    { path: '/platform-overview', title: 'Platform Overview', about: 'All five modules: Prospecting, Sales, CLM, Service, Handover' },
     { path: '/crm-integration', title: 'CRM Integration', about: 'Salesforce and HubSpot' },
     { path: '/salesforce-integration', title: 'Salesforce Integration', about: 'Adapter pattern, deterministic ID-based sync, write-back' },
     { path: '/for-vp-sales', title: 'For VP Sales', about: 'Forecast accuracy, rescued deals, new-AE ramp, tool consolidation' },

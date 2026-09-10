@@ -14,11 +14,6 @@
           "href": "https://gowarmcrm.com/auth.md",
           "type": "text/markdown",
           "title": "Agent authentication and MCP usage guide"
-        },
-        {
-          "href": "https://gowarmcrm.com/platform-overview.md",
-          "type": "text/markdown",
-          "title": "GoWarmCRM platform overview"
         }
       ],
       "service-meta": [

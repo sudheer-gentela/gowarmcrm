@@ -67,6 +67,5 @@ Priced by organisation rather than per seat. Modules are enabled per organisatio
 ## Related reading
 - The argument in full: https://gowarmcrm.com/why-you-stopped-knowing.md
 - Sales execution side of the platform: https://gowarmcrm.com/index.md
-- Platform overview: https://gowarmcrm.com/platform-overview.md
 - Pricing: https://gowarmcrm.com/pricing.md
 - Contact: https://gowarmcrm.com/contact.md

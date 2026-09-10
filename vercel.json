@@ -560,6 +560,24 @@
           "value": "*"
         }
       ]
+    },
+    {
+      "source": "/platform-overview",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/platform-overview.md",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
     }
   ]
 }

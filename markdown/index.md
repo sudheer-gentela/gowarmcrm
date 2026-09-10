@@ -52,7 +52,6 @@ Thirteen modules across the two products — prospecting, deals, playbooks, cont
 Every plan is a flat monthly price for the team rather than per seat. Either product can be bought on its own. Full details: https://gowarmcrm.com/pricing.md
 
 ## Related reading
-- Platform modules in full: https://gowarmcrm.com/platform-overview.md
 - The execution gap: https://gowarmcrm.com/execution-gap.md
 - Why you stopped knowing what is happening: https://gowarmcrm.com/why-you-stopped-knowing.md
 - Standing versus timeboxed work: https://gowarmcrm.com/standing-vs-timeboxed-work.md

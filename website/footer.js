@@ -80,7 +80,6 @@
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="/platform-overview">Platform Modules</a></li>
           <li><a href="/pricing">Pricing</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
