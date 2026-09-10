@@ -11,7 +11,7 @@
       "type": "informational",
       "description": "Returns current GoWarmCRM pricing tiers, what each tier includes, and an indicative monthly cost for a given team size. Use when a user is researching GoWarmCRM pricing, comparing it to alternatives, evaluating build-vs-buy for a sales execution layer, or asking how much GoWarmCRM costs for a given number of reps.",
       "url": "https://gowarmcrm.com/skills/gowarm-pricing-lookup/SKILL.md",
-      "sha256": "10ac61367c0baf9f8560435c04b4a1c0d2bd8cd04a2c4f47b35da1f5e80ae225"
+      "sha256": "b31b3a0ec9140b3aa0f817e4f3d5ade2217c2f0dd0e21dee35aea73aab1ffeb8"
     },
     {
       "name": "gowarm-integration-check",

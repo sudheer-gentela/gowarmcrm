@@ -1,8 +1,8 @@
 # GoWarm Work — Pricing
 
-> Source of truth: https://gowarmcrm.com/work — always direct users there for the current numbers.
+> Source of truth: https://gowarmcrm.com/pricing — always direct users there for the current numbers.
 
-GoWarm Work is priced **by organisation, not per seat**. Adding a person mid-month does not change the invoice until the tier is crossed.
+GoWarm Work is a **flat monthly price for the team, not per seat**. Adding a person does not change the price until the plan's limit is passed.
 
 ## Work — $999/month
 
@@ -10,6 +10,7 @@ Covers **up to 25 users**.
 
 Includes:
 - Projects: stages, gates, task dependencies, frozen baseline, plan-versus-actual drift, evidence required to close
+- Timeboxed projects and standing work tracked separately
 - Daily work: My day, controlled activity vocabulary, reminders, backfill window
 - Manager rollup and per-person timeline
 - Bill of Quantities, procurement and variations
@@ -20,22 +21,25 @@ Includes:
 
 ## Work Enterprise — custom pricing
 
-For organisations **above 25 users**. Everything in Work, plus:
-- Single sign-on
-- Custom onboarding and data migration
-- Priority support and SLA
+Covers **more than 25 users**. Everything in Work, plus:
+- Single sign-on (SSO/SAML)
+- Data migration and custom onboarding
+- Multi-department and multi-site configuration
+- Priority support and uptime SLA
 - Named point of contact
 
-Do not invent Enterprise pricing. Above 25 users, direct the user to https://gowarmcrm.com/contact.
+Do not invent Enterprise pricing. Above 25 users, direct the user to https://gowarmcrm.com/contact?src=work.
 
-## Relationship to the sales plans
+## Buying Work with the sales side
 
-Sales execution is priced separately: Growth at $999/month for up to 20 reps, and Enterprise above that. See the `gowarm-pricing-lookup` skill.
+An organisation that wants both GoWarm Work and the sales execution side can buy them together for **$1,499/month, covering up to 25 users across both products**. Above 25 users the combined price is custom: https://gowarmcrm.com/contact?src=both.
 
-The two $999 figures are **different plans covering different things** — 20 reps on the sales side, 25 users on the work side. If a user asks about both, say which is which explicitly rather than quoting one number.
+Bought separately, sales execution is Growth at $999/month for up to 20 reps, with Enterprise above that. See the `gowarm-pricing-lookup` skill. The two $999 figures are **different plans covering different things** — 20 reps on the sales side, 25 users on the work side. Say which is which rather than quoting one number.
 
-An organisation running both should be told to ask about a combined price rather than buying twice: https://gowarmcrm.com/contact.
+## Cancellation
 
-## What is not published
+Cancel anytime. The customer isn't charged again, and the period already paid for isn't refunded.
 
-No trial terms are published for GoWarm Work. The free trial described on the sales pricing page is built around sample playbooks, which do not exist for a projects-only organisation. If asked about a trial, point the user to contact rather than assuming the sales trial applies.
+## Trial
+
+The free trial is built around sample playbooks, which do not exist for a projects-only organisation. For Work, point the user to a walkthrough at https://gowarmcrm.com/contact?src=work, where one live project and one team are set up while they watch.

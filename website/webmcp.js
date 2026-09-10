@@ -35,15 +35,16 @@
   var PLANS = [
     {
       name: 'Growth',
+      product: 'GoWarm CRM (sales execution)',
       price_usd_per_month: 999,
-      billing: 'Billed annually (~$11,988/year). Flat rate, not per seat.',
+      billing: 'Flat monthly rate for the team, not per seat.',
       covers: 'Up to 20 reps and 5 manager seats.',
       includes: [
         'Nightly diagnostic engine across deals, prospects, contracts, cases, handovers',
         'Live action queue for every rep',
         'AI-drafted next actions (rep approval required)',
         'Unlimited playbooks and play chaining',
-        'CRM connectors: Salesforce, HubSpot, Pipedrive, Zoho, Dynamics',
+        'Works on top of Salesforce or HubSpot, or as the CRM itself',
         'Email and calendar signal ingestion',
         'Forecast health dashboard, manager action overview, RevOps view',
         'Diagnostic rule customisation (35+ rules with per-org thresholds)',
@@ -53,20 +54,70 @@
     },
     {
       name: 'Enterprise',
+      product: 'GoWarm CRM (sales execution)',
       price_usd_per_month: null,
       billing: 'Custom pricing.',
-      covers: 'Organisations above 20 reps.',
+      covers: 'More than 20 reps.',
       includes: [
         'Everything in Growth',
-        'Custom integrations and adapter development',
-        'Multi-team configuration',
+        'Single sign-on (SSO/SAML)',
+        'Custom CRM integrations and adapter development',
+        'Multi-team and multi-region configuration',
+        'Custom rules and threshold tuning',
         'Bring-your-own AI key (OpenAI, Anthropic, others)',
-        'SSO and advanced security controls',
-        'SLA-backed support and quarterly business reviews'
+        'Uptime SLA and quarterly business reviews'
       ],
       notes: 'Contact sales at https://gowarmcrm.com/contact for a quote.'
+    },
+    {
+      name: 'Work',
+      product: 'GoWarm Work (projects and daily work)',
+      price_usd_per_month: 999,
+      billing: 'Flat monthly rate for the team, not per seat.',
+      covers: 'Up to 25 users.',
+      includes: [
+        'Projects with stages, gates, task dependencies and a frozen baseline',
+        'Plan-versus-actual drift and evidence required to close a task',
+        'Timeboxed projects and standing work tracked separately',
+        'Daily work: one line a day per person, with manager rollup and per-person timeline',
+        'Bill of Quantities, procurement and variations',
+        'Departments with separate working schedules and holiday calendars',
+        'Onboarding session and setup review'
+      ],
+      notes: 'No timers, screenshots, idle detection or productivity scores. No sales modules need to be enabled. No free trial; book a walkthrough at https://gowarmcrm.com/contact?src=work.'
+    },
+    {
+      name: 'Work Enterprise',
+      product: 'GoWarm Work (projects and daily work)',
+      price_usd_per_month: null,
+      billing: 'Custom pricing.',
+      covers: 'More than 25 users.',
+      includes: [
+        'Everything in Work',
+        'Single sign-on (SSO/SAML)',
+        'Data migration and custom onboarding',
+        'Multi-department and multi-site configuration',
+        'Priority support and uptime SLA',
+        'Named point of contact'
+      ],
+      notes: 'Contact sales at https://gowarmcrm.com/contact?src=work for a quote.'
+    },
+    {
+      name: 'Combined',
+      product: 'GoWarm CRM and GoWarm Work together',
+      price_usd_per_month: 1499,
+      billing: 'Flat monthly rate for the team, not per seat.',
+      covers: 'Up to 25 users across both products.',
+      includes: [
+        'Everything in GoWarm CRM Growth',
+        'Everything in GoWarm Work',
+        'Won deals hand over to delivery projects'
+      ],
+      notes: 'AI usage on the sales side is metered separately. Above 25 users the combined price is custom: https://gowarmcrm.com/contact?src=both.'
     }
   ];
+
+  var CANCELLATION = 'Cancel anytime. No further charges; the period already paid for is not refunded.';
 
   var INTEGRATIONS = {
     salesforce: {
@@ -198,28 +249,47 @@
   tools.push({
     name: 'gowarm_get_pricing',
     description:
-      'Returns current GoWarmCRM plans, what each plan includes, and an indicative monthly cost for a given team size. GoWarmCRM is priced flat-rate, not per seat. Use when a user asks how much GoWarmCRM costs, what a plan includes, or which plan fits their team.',
+      'Returns current GoWarmCRM plans for sales execution (GoWarm CRM), projects and daily work (GoWarm Work), and both combined, with what each plan includes and an indicative monthly cost for a given team size. Every plan is a flat monthly rate, not per seat. Use when a user asks how much GoWarmCRM costs, what a plan includes, or which plan fits their team.',
     inputSchema: {
       type: 'object',
       properties: {
         team_size: {
           type: 'integer',
-          description: 'Number of sales reps. Optional. If given, the response names the plan that fits.',
+          description: 'Number of people. For product "sales" this is reps; for "work" or "both" it is users. Optional. If given, the response names the plan that fits.',
           minimum: 1
+        },
+        product: {
+          type: 'string',
+          enum: ['sales', 'work', 'both'],
+          description: 'Which product the user means. Optional; defaults to "sales".'
         }
       }
     },
     annotations: { readOnlyHint: true, openWorldHint: false },
     execute: function (args) {
       var size = args && args.team_size;
+      var product = (args && args.product) || 'sales';
+      if (['sales', 'work', 'both'].indexOf(product) === -1) product = 'sales';
       var recommended = null;
       if (typeof size === 'number' && size > 0) {
-        recommended = size <= 20
-          ? { plan: 'Growth', indicative_monthly_usd: 999, note: 'Flat rate — the price does not change with rep count inside the 20-rep band.' }
-          : { plan: 'Enterprise', indicative_monthly_usd: null, note: 'Above 20 reps the answer is Enterprise with custom pricing. Contact sales for a quote.' };
+        if (product === 'work') {
+          recommended = size <= 25
+            ? { plan: 'Work', indicative_monthly_usd: 999, note: 'Flat rate — the price does not change inside the 25-user limit.' }
+            : { plan: 'Work Enterprise', indicative_monthly_usd: null, note: 'Above 25 users the answer is Work Enterprise with custom pricing. Contact sales for a quote.' };
+        } else if (product === 'both') {
+          recommended = size <= 25
+            ? { plan: 'Combined', indicative_monthly_usd: 1499, note: 'Both products for up to 25 users in total.' }
+            : { plan: 'Combined, above 25 users', indicative_monthly_usd: null, note: 'Above 25 users the combined price is custom. Contact sales for a quote.' };
+        } else {
+          recommended = size <= 20
+            ? { plan: 'Growth', indicative_monthly_usd: 999, note: 'Flat rate — the price does not change with rep count inside the 20-rep limit.' }
+            : { plan: 'Enterprise', indicative_monthly_usd: null, note: 'Above 20 reps the answer is Enterprise with custom pricing. Contact sales for a quote.' };
+        }
       }
       return ok({
         plans: PLANS,
+        cancellation: CANCELLATION,
+        product: product,
         team_size: size || null,
         recommended: recommended,
         pricing_page: ORIGIN + '/pricing',
