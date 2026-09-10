@@ -11,14 +11,14 @@
       "type": "informational",
       "description": "Returns current GoWarmCRM pricing tiers, what each tier includes, and an indicative monthly cost for a given team size. Use when a user is researching GoWarmCRM pricing, comparing it to alternatives, evaluating build-vs-buy for a sales execution layer, or asking how much GoWarmCRM costs for a given number of reps.",
       "url": "https://gowarmcrm.com/skills/gowarm-pricing-lookup/SKILL.md",
-      "sha256": "b31b3a0ec9140b3aa0f817e4f3d5ade2217c2f0dd0e21dee35aea73aab1ffeb8"
+      "sha256": "e81eef1d0b525a4ad7ae3a0cdfae0e025b2c000a3a9f8c636fc848a04a47365f"
     },
     {
       "name": "gowarm-integration-check",
       "type": "informational",
-      "description": "Returns whether GoWarmCRM integrates with a given CRM, email platform, or sales tool, along with integration depth, supported features, and indicative setup time. Use when a user asks whether GoWarmCRM works with their stack, requests integration details for Salesforce, HubSpot, Pipedrive, Zoho, Dynamics, Gmail, or Outlook, or compares GoWarmCRM's integration coverage to alternatives.",
+      "description": "Returns whether GoWarmCRM integrates with a given CRM, email platform, or sales tool, along with integration depth, supported features, and indicative setup time. Use when a user asks whether GoWarmCRM works with their stack, requests integration details for Salesforce, HubSpot, Gmail, or Outlook, or compares GoWarmCRM's integration coverage to alternatives.",
       "url": "https://gowarmcrm.com/skills/gowarm-integration-check/SKILL.md",
-      "sha256": "964f7bbfae9de7c031063469c9f1cf56de663cdab415cc81776ad2ba2225f882"
+      "sha256": "af33cc627fbe7d0cd8f778de90dfe0c7a938f600e1837c7449d5ab0cf4294764"
     },
     {
       "name": "gowarm-execution-gap-assessment",

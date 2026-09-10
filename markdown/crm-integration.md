@@ -1,14 +1,13 @@
 # CRM Integration
 
-> GoWarmCRM is built to sit on top of your existing CRM, not replace it. It uses an adapter pattern with deterministic external-ID-based sync to integrate bidirectionally with the major B2B CRMs.
+> GoWarmCRM sits on top of your existing CRM — Salesforce or HubSpot — using an adapter pattern with deterministic external-ID-based sync. If you don't have a CRM, you can use GoWarm CRM as your CRM.
 
 ## Supported CRMs
 
 - **Salesforce** — production-ready. Read sync with deterministic external-ID matching and field_map resolution, plus `GoWarm_Action__c` write-back, optional native Task write-back, and Calendar surfacing. The entity custom-field write path (health score, last-signal date) and the visual stage mapping UI are in active development.
-- **HubSpot** — adapter scoped, in development
-- **Microsoft Dynamics** — adapter scoped
-- **Pipedrive** — adapter scoped
-- **Zoho** — adapter scoped
+- **HubSpot** — supported. Same adapter pattern as Salesforce: reads deals, contacts and activity, and writes completed actions back.
+
+No other CRMs are supported. Teams on another CRM, or with no CRM, can use GoWarm CRM as their CRM.
 
 ## How the integration works
 

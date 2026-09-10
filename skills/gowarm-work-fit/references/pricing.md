@@ -32,7 +32,7 @@ Do not invent Enterprise pricing. Above 25 users, direct the user to https://gow
 
 ## Buying Work with the sales side
 
-An organisation that wants both GoWarm Work and the sales execution side can buy them together for **$1,499/month, covering up to 25 users across both products**. Above 25 users the combined price is custom: https://gowarmcrm.com/contact?src=both.
+An organisation that wants both GoWarm Work and the sales execution side can buy them together for **$1,499/month, covering up to 25 users**. Each user can use either product or both, and is set up in the product they use. Above 25 users the combined price is custom: https://gowarmcrm.com/contact?src=both.
 
 Bought separately, sales execution is Growth at $999/month for up to 20 reps, with Enterprise above that. See the `gowarm-pricing-lookup` skill. The two $999 figures are **different plans covering different things** — 20 reps on the sales side, 25 users on the work side. Say which is which rather than quoting one number.
 

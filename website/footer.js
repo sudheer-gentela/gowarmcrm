@@ -73,7 +73,7 @@
           <li><a href="/project-tracking-software-small-business">Project Tracking for SMBs</a></li>
           <li><a href="/standing-vs-timeboxed-work">Standing vs Timeboxed</a></li>
           <li><a href="/vs-spreadsheets">Work vs Spreadsheets</a></li>
-          <li><a href="/work#pricing">Work Pricing</a></li>
+          <li><a href="/pricing#work">Work Pricing</a></li>
           <li><a href="/contact?src=work">Book a Walkthrough</a></li>
         </ul>
       </div>

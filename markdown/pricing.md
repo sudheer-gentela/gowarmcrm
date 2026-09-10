@@ -8,7 +8,7 @@
 |---|---|---|
 | GoWarm CRM Growth | $999/month | Up to 20 reps and 5 manager seats |
 | GoWarm Work | $999/month | Up to 25 users |
-| GoWarm CRM and GoWarm Work combined | $1,499/month | Up to 25 users across both products |
+| GoWarm CRM and GoWarm Work combined | $1,499/month | Up to 25 users, each on either product or both |
 | Enterprise (any of the above) | Custom | Above the limits shown |
 
 Adding a person does not change the price until the plan's limit is passed.
@@ -60,7 +60,7 @@ More than 25 users. Everything in Work, plus single sign-on (SSO/SAML), data mig
 
 ## Both products — $1,499/month
 
-For organisations that win work and then deliver it. Up to 25 users across both products. Includes everything in GoWarm CRM Growth and everything in GoWarm Work, with won deals handing over to delivery projects. AI usage on the sales side is billed separately.
+For organisations that win work and then deliver it. Up to 25 users, and each user can use GoWarm CRM, GoWarm Work or both; users are set up in the product they use. Includes everything in GoWarm CRM Growth and everything in GoWarm Work, with won deals handing over to delivery projects. AI usage on the sales side is billed separately.
 
 Above 25 users, pricing is custom and includes everything in both Enterprise plans.
 

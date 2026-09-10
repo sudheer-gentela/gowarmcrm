@@ -25,11 +25,10 @@ One project, one owner, a horizon under a month, and no decision riding on a num
 
 ## Pricing
 
-$999/month for up to 25 users, custom above that, priced by organisation rather than per seat.
+$999/month for up to 25 users, custom above that, priced by organisation rather than per seat. Together with GoWarm CRM, both products are $1,499/month for up to 25 users. Full details: https://gowarmcrm.com/pricing.md
 
 ## Related reading
 - GoWarm Work overview: https://gowarmcrm.com/work.md
 - Daily work tracking: https://gowarmcrm.com/daily-work-tracking.md
 - Project tracking for small business: https://gowarmcrm.com/project-tracking-software-small-business.md
 - Standing versus timeboxed work: https://gowarmcrm.com/standing-vs-timeboxed-work.md
-- Bill of quantities vs a budget line: https://gowarmcrm.com/blog/bill-of-quantities-vs-budget-line

@@ -8,7 +8,7 @@ GoWarmCRM is priced as a **flat monthly rate for the team, not per seat**, on bo
 |---|---|---|
 | Sales: Growth | $999/month | Up to 20 reps and 5 manager seats |
 | Work | $999/month | Up to 25 users |
-| Combined (sales and Work) | $1,499/month | Up to 25 users across both |
+| Combined (sales and Work) | $1,499/month | Up to 25 users, each on either product or both |
 | Enterprise (each of the above) | Custom | Above those limits |
 
 Two plans are $999/month and cover **different things**: 20 reps on the sales side, 25 users on the work side. Never quote the figure without saying which.
@@ -86,7 +86,7 @@ For organisations with **more than 25 users**. Everything in Work, plus:
 
 # Combined — $1,499/month
 
-Both pillars together, covering **up to 25 users across both products**. Includes everything in sales Growth and everything in Work, with won deals handing over to delivery projects. AI usage on the sales side is metered separately.
+Both pillars together, covering **up to 25 users**. Each user can use the sales side, Work, or both, and is set up in the product they use. A person using both products counts once. Includes everything in sales Growth and everything in Work, with won deals handing over to delivery projects. AI usage on the sales side is metered separately.
 
 Above 25 users the combined price is custom and includes everything in both Enterprise plans. Do not invent a figure; direct the user to https://gowarmcrm.com/contact?src=both.
 

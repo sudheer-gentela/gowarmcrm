@@ -58,7 +58,7 @@ Not directly — and we don't pitch it that way. What it does is unlock 15–20%
 ## Tool consolidation at next renewal
 
 GoWarmCRM does not replace:
-- CRM (Salesforce, HubSpot, Pipedrive, Dynamics, Zoho)
+- CRM (Salesforce, HubSpot)
 - Outbound dialer / sequencer
 - Conversation intelligence
 

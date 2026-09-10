@@ -17,7 +17,7 @@ Both are records of the past. Neither tells a person what to do on Tuesday morni
 
 ## Two products, one platform
 
-**GoWarm CRM** sits above Salesforce, HubSpot, Pipedrive, Zoho or Dynamics, runs nightly diagnostics across deals, contracts, cases, handovers and prospects, and gives every rep a ranked list of what to do first. Signals are read from email, calendar and meeting patterns rather than only what was logged.
+**GoWarm CRM** sits above Salesforce or HubSpot (or runs as your CRM if you don't have one), runs nightly diagnostics across deals, contracts, cases, handovers and prospects, and gives every rep a ranked list of what to do first. Signals are read from email, calendar and meeting patterns rather than only what was logged.
 
 **GoWarm Work** carries projects with stages, gates and a baseline frozen at the start, and daily work written once by the person doing it and read on their own day, against the task, and in the manager rollup. Tasks close with evidence attached. Nothing generates work, so no queue grows past the point of being read.
 
@@ -46,7 +46,7 @@ The test underneath all five: if everyone stopped trying to keep you informed to
 
 ## Pricing
 
-GoWarm CRM: $999/month up to 20 reps, custom above. GoWarm Work: $999/month up to 25 users, custom above. Separate products, both priced by organisation rather than per seat, either available on its own.
+GoWarm CRM: $999/month up to 20 reps, custom above. GoWarm Work: $999/month up to 25 users, custom above. Both together: $1,499/month up to 25 users. Every plan is a flat monthly price for the team, not per seat, and either product is available on its own. Full details: https://gowarmcrm.com/pricing.md
 
 ## Related reading
 - Platform root: https://gowarmcrm.com/index.md
@@ -54,7 +54,3 @@ GoWarm CRM: $999/month up to 20 reps, custom above. GoWarm Work: $999/month up t
 - GoWarm Work: https://gowarmcrm.com/work.md
 - Why you stopped knowing what is happening: https://gowarmcrm.com/why-you-stopped-knowing.md
 - Pricing: https://gowarmcrm.com/pricing.md
-- Project tracking for small business: https://gowarmcrm.com/project-tracking-software-small-business.md
-- Daily work tracking: https://gowarmcrm.com/daily-work-tracking.md
-- Standing versus timeboxed work: https://gowarmcrm.com/standing-vs-timeboxed-work.md
-- Bill of quantities vs a budget line: https://gowarmcrm.com/blog/bill-of-quantities-vs-budget-line

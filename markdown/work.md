@@ -60,8 +60,9 @@ Companies up to 500 people, in any industry. What they share is not size but a g
 
 - **Work** — $999/month, up to 25 users. Projects and daily work, manager rollup and per-person timeline, Bill of Quantities with procurement and variations, multiple departments with separate schedules and holiday calendars, conversation attachment on chosen channels, document storage connections, onboarding session.
 - **Work Enterprise** — custom, above 25 users. Adds single sign-on, custom onboarding and data migration, priority support and SLA, named point of contact.
+- **With GoWarm CRM** — $1,499/month for both products, up to 25 users.
 
-Priced by organisation rather than per seat. Modules are enabled per organisation, so an org can run projects and daily work with every sales module switched off, and add them later without migrating anything.
+Priced by organisation rather than per seat. Modules are enabled per organisation, so an org can run projects and daily work with every sales module switched off, and add them later without migrating anything. Cancel anytime: no further charges, and the period already paid for isn't refunded. Full details: https://gowarmcrm.com/pricing.md
 
 ## Related reading
 - The argument in full: https://gowarmcrm.com/why-you-stopped-knowing.md

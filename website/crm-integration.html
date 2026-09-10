@@ -26,7 +26,7 @@
   <meta name="twitter:title" content="GoWarmCRM + Your CRM — The Execution Layer Your CRM Is Missing" />
   <meta name="twitter:description" content="GoWarmCRM sits on top of your CRM — reading signals nightly, firing playbooks, surfacing a ranked rep action queue. No rip-and-replace. Live in 1–2 weeks." />
   <meta name="twitter:image" content="https://gowarmcrm.com/og-image.png" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"GoWarmCRM CRM Integration","description":"GoWarmCRM connects to Salesforce, HubSpot and other CRMs via API — adding the execution layer that surfaces nightly diagnostics, playbook triggers, and ranked action queues for every rep without replacing your CRM.","url":"https://gowarmcrm.com/crm-integration","publisher":{"@type":"Organization","name":"GoWarmCRM","url":"https://gowarmcrm.com"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"GoWarmCRM CRM Integration","description":"GoWarmCRM connects to Salesforce and HubSpot via API — adding the execution layer that surfaces nightly diagnostics, playbook triggers, and ranked action queues for every rep without replacing your CRM.","url":"https://gowarmcrm.com/crm-integration","publisher":{"@type":"Organization","name":"GoWarmCRM","url":"https://gowarmcrm.com"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://gowarmcrm.com/"},{"@type":"ListItem","position":2,"name":"CRM Integration","item":"https://gowarmcrm.com/crm-integration"}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can GoWarmCRM work alongside Salesforce without a rip-and-replace?","acceptedAnswer":{"@type":"Answer","text":"Yes. GoWarmCRM connects to Salesforce via API and adds the execution layer on top \u2014 without replacing Salesforce, migrating data, or changing your CRM structure. Salesforce remains the system of record. GoWarmCRM is the system of action that sits alongside it."}},{"@type":"Question","name":"How does GoWarmCRM detect stalled deals if reps haven't updated the CRM?","acceptedAnswer":{"@type":"Answer","text":"GoWarmCRM reads four signal sources: CRM fields, email threads (last two-way contact), calendar events (meeting cadence), and meeting patterns. Because it reads email and calendar directly, it can detect a stall even when a rep hasn't updated the CRM stage or logged any activity."}},{"@type":"Question","name":"Does GoWarmCRM require reps to change how they use their CRM?","acceptedAnswer":{"@type":"Answer","text":"No. Reps continue to use their CRM as they always have. GoWarmCRM reads from the CRM in the background and presents a separate daily action queue. There is no retraining required and no change to existing CRM workflows."}},{"@type":"Question","name":"How does GoWarmCRM fire playbook actions automatically?","acceptedAnswer":{"@type":"Answer","text":"When a deal moves to a new stage in the CRM, GoWarmCRM detects the stage change via API and triggers the configured playbook step \u2014 adding the required action to the rep's queue automatically. The rep doesn't need to look up a playbook or manually trigger a step."}},{"@type":"Question","name":"What happens to GoWarmCRM actions when a rep completes them?","acceptedAnswer":{"@type":"Answer","text":"Completed actions are written back to the CRM via API. For Salesforce, this is tracked in the GoWarm Action custom object, with an optional write-back to native Salesforce Tasks. The next nightly diagnostic run reads completion status and updates the rep's queue accordingly."}},{"@type":"Question","name":"How long does it take to integrate GoWarmCRM with Salesforce?","acceptedAnswer":{"@type":"Answer","text":"1\u20132 weeks for a live Salesforce integration. Setup involves installing the GoWarm managed package from a private install link (it installs the GoWarm Action custom object), OAuth authorisation, mapping Opportunity stage names, configuring diagnostic thresholds, and seeding playbooks. No Salesforce admin reconfiguration required."}}]}</script>
   <!-- SEO/AEO:END -->
@@ -313,7 +313,7 @@
       <div class="crm-cards-intro">
         <span class="section-eyebrow">Integrations</span>
         <h2>Find your CRM.</h2>
-        <p>GoWarmCRM has a live integration with Salesforce today. More CRMs are on the roadmap. Running something else? Tell us — the integration architecture is CRM-agnostic by design.</p>
+        <p>GoWarmCRM has live integrations with Salesforce and HubSpot. No CRM yet? You can use GoWarm CRM as your CRM.</p>
       </div>
       <div class="crm-grid">
         <a href="/salesforce-integration" class="crm-card">
@@ -322,19 +322,19 @@
           <p class="crm-card-desc">GoWarmCRM connects via Salesforce REST API. Actions are tracked in a dedicated GoWarm Action custom object — no interference with your existing Tasks, Process Builder flows, or third-party apps. Actions also surface on Salesforce Calendar. Optional Task write-back configurable.</p>
           <span class="crm-card-link">See Salesforce integration</span>
         </a>
-        <a href="/contact" class="crm-card other">
-          <span class="crm-card-status soon">More coming</span>
-          <div class="crm-card-title">HubSpot &amp; others</div>
-          <p class="crm-card-desc">HubSpot, Pipedrive, Zoho, and Dynamics integrations are on the roadmap. If your CRM has a REST API, GoWarmCRM can connect to it. Tell us what you use and we will prioritise accordingly.</p>
-          <span class="crm-card-link" style="color:var(--ink-3);">Tell us your CRM</span>
+        <a href="/contact" class="crm-card">
+          <span class="crm-card-status live">Live integration</span>
+          <div class="crm-card-title">HubSpot</div>
+          <p class="crm-card-desc">GoWarmCRM connects to HubSpot through its API, on the same adapter pattern as Salesforce. It reads deals, contacts and activity, and writes completed actions back, so HubSpot stays your system of record.</p>
+          <span class="crm-card-link">Book a HubSpot walkthrough</span>
         </a>
       </div>
       <div class="other-crm-strip">
         <div class="other-crm-strip-text">
-          <h4>Using a different CRM?</h4>
-          <p>HubSpot, Pipedrive, Zoho, Dynamics, Freshsales, Close — GoWarmCRM's architecture is CRM-agnostic. If your CRM has a REST API, an integration is technically feasible.</p>
+          <h4>No CRM, or a different one?</h4>
+          <p>Salesforce and HubSpot are the supported integrations today. If you don't have a CRM, you can use GoWarm CRM as your CRM.</p>
         </div>
-        <a href="/contact" class="btn btn-outline" style="white-space:nowrap;">Tell us your CRM →</a>
+        <a href="/contact" class="btn btn-outline" style="white-space:nowrap;">Talk to us</a>
       </div>
     </div>
   </section>
@@ -346,7 +346,7 @@
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">Does GoWarmCRM replace our CRM?<span class="faq-icon">+</span></button>
-        <div class="faq-a"><p>No — and it's not designed to. Your CRM continues to be the single source of truth for all pipeline data. GoWarmCRM reads from it, processes it, and surfaces actions based on rules, playbooks, and AI-drafted content. The CRM is never displaced as the record layer. Your existing CRM investment and data stay intact.</p></div>
+        <div class="faq-a"><p>If you already have a CRM, GoWarmCRM sits on top of it and your CRM stays the single source of truth for pipeline data. GoWarmCRM reads from it and surfaces actions based on rules, playbooks, and AI-drafted content. Salesforce and HubSpot are supported today. If you don't have a CRM, you can use GoWarm CRM as your CRM.</p></div>
       </div>
 
       <div class="faq-item">
@@ -375,8 +375,8 @@
       </div>
 
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">My CRM isn't listed. Can GoWarmCRM still integrate?<span class="faq-icon">+</span></button>
-        <div class="faq-a"><p>GoWarmCRM's integration architecture is CRM-agnostic — it reads via API and writes activity back via API. If your CRM exposes a REST API (most modern CRMs do), an integration is technically feasible. The current live integration is Salesforce. HubSpot is in active development. If you're running Dynamics, Pipedrive, Zoho, or another platform, <a href="/contact" style="color:var(--rust);">contact us</a> — customer demand shapes the integration roadmap directly.</p></div>
+        <button class="faq-q" onclick="toggleFaq(this)">My CRM isn't listed. Can I still use GoWarmCRM?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Salesforce and HubSpot are the supported integrations today. If you're on another CRM, you can move your pipeline into GoWarm CRM and use it as your CRM, or <a href="/contact" style="color:var(--rust);">talk to us</a> about your setup.</p></div>
       </div>
     </div>
   </section>

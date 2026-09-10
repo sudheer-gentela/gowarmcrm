@@ -3,7 +3,7 @@
   "host": {
     "displayName": "GoWarmCRM",
     "identifier": "gowarmcrm.com",
-    "description": "Two pillars on one platform, enabled per organisation. Sales execution sits above Salesforce, HubSpot, Pipedrive, Zoho and Dynamics, runs nightly diagnostics across deals, contracts, cases, handovers and prospects, and surfaces a prioritised action queue for every rep. GoWarm Work tracks projects and daily work for companies up to 500 people in any industry \u2014 stages with gates, a baseline frozen at start, evidence required to close a task, and one line a day from the person doing the work.",
+    "description": "Two pillars on one platform, enabled per organisation. Sales execution sits above Salesforce or HubSpot, or runs as the CRM itself, runs nightly diagnostics across deals, contracts, cases, handovers and prospects, and surfaces a prioritised action queue for every rep. GoWarm Work tracks projects and daily work for companies up to 500 people in any industry \u2014 stages with gates, a baseline frozen at start, evidence required to close a task, and one line a day from the person doing the work.",
     "url": "https://gowarmcrm.com",
     "trustManifest": {
       "identity": "https://gowarmcrm.com",

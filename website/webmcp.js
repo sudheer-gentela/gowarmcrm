@@ -107,7 +107,7 @@
       product: 'GoWarm CRM and GoWarm Work together',
       price_usd_per_month: 1499,
       billing: 'Flat monthly rate for the team, not per seat.',
-      covers: 'Up to 25 users across both products.',
+      covers: 'Up to 25 users. Each user can use either product or both, and is set up in the product they use; a person using both counts once.',
       includes: [
         'Everything in GoWarm CRM Growth',
         'Everything in GoWarm Work',
@@ -129,30 +129,9 @@
     },
     hubspot: {
       name: 'HubSpot',
-      status: 'In development',
-      detail: 'Adapter built on the same orchestrator pattern as Salesforce, currently in customer pilots.',
-      setup: '~1 week post-GA',
-      url: ORIGIN + '/crm-integration'
-    },
-    dynamics: {
-      name: 'Microsoft Dynamics',
-      status: 'Scoped',
-      detail: 'Adapter architecture defined, awaiting build prioritisation.',
-      setup: 'Contact sales to discuss timeline',
-      url: ORIGIN + '/crm-integration'
-    },
-    pipedrive: {
-      name: 'Pipedrive',
-      status: 'Scoped',
-      detail: 'Adapter architecture defined.',
-      setup: 'Contact sales for pilot eligibility',
-      url: ORIGIN + '/crm-integration'
-    },
-    zoho: {
-      name: 'Zoho',
-      status: 'Scoped',
-      detail: 'Adapter architecture defined.',
-      setup: 'Contact sales',
+      status: 'Supported',
+      detail: 'Live integration on the same orchestrator pattern as Salesforce. Reads deals, contacts and activity, and writes completed actions back.',
+      setup: '1-2 weeks',
       url: ORIGIN + '/crm-integration'
     },
     gmail: {
@@ -175,8 +154,6 @@
     sfdc: 'salesforce',
     'sales force': 'salesforce',
     'hub spot': 'hubspot',
-    'microsoft dynamics': 'dynamics',
-    'dynamics 365': 'dynamics',
     'google workspace': 'gmail',
     google: 'gmail',
     gsuite: 'gmail',
@@ -195,7 +172,7 @@
     { path: '/pricing', title: 'Pricing', about: 'Tiers, what is included, comparison vs building in-house' },
     { path: '/execution-gap', title: 'Execution Gap', about: 'Why CRMs track but do not execute, and the structural fix' },
     { path: '/platform-overview', title: 'Platform Overview', about: 'All five modules: Prospecting, Sales, CLM, Service, Handover' },
-    { path: '/crm-integration', title: 'CRM Integration', about: 'Salesforce, HubSpot, Pipedrive, Zoho, Dynamics' },
+    { path: '/crm-integration', title: 'CRM Integration', about: 'Salesforce and HubSpot' },
     { path: '/salesforce-integration', title: 'Salesforce Integration', about: 'Adapter pattern, deterministic ID-based sync, write-back' },
     { path: '/for-vp-sales', title: 'For VP Sales', about: 'Forecast accuracy, rescued deals, new-AE ramp, tool consolidation' },
     { path: '/for-ceo', title: 'For CEOs', about: 'Revenue predictability, investor-grade metrics, board narrative' },
@@ -255,7 +232,7 @@
       properties: {
         team_size: {
           type: 'integer',
-          description: 'Number of people. For product "sales" this is reps; for "work" or "both" it is users. Optional. If given, the response names the plan that fits.',
+          description: 'Number of people. For product "sales" this is reps; for "work" it is users; for "both" it is the total number of people, counting someone who uses both products once. Optional. If given, the response names the plan that fits.',
           minimum: 1
         },
         product: {
@@ -327,7 +304,7 @@
           query: args.tool,
           supported: false,
           message:
-            'Not currently a supported integration. GoWarmCRM supports Salesforce, HubSpot, Pipedrive, Zoho, Dynamics, Gmail/Google Workspace and Outlook/Exchange. Contact sales to discuss feasibility for anything else.',
+            'Not currently a supported integration. GoWarmCRM supports Salesforce, HubSpot, Gmail/Google Workspace and Outlook/Exchange. Teams on another CRM, or with no CRM, can use GoWarm CRM as their CRM. Contact sales to discuss your setup.',
           contact_url: ORIGIN + '/contact',
           integrations_page: ORIGIN + '/crm-integration'
         });

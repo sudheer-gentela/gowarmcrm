@@ -1,6 +1,6 @@
 # GoWarm CRM — Sales Execution Platform
 
-> GoWarm CRM is the sales execution pillar of the GoWarm platform. It sits above a CRM — Salesforce, HubSpot, Pipedrive, Zoho or Dynamics — and answers the question the CRM does not: what should happen next. Nightly diagnostics run across deals, contracts, cases, handovers and prospects, producing a prioritised action queue for every rep each morning.
+> GoWarm CRM is the sales execution pillar of the GoWarm platform. It sits above Salesforce or HubSpot — or runs as the CRM for teams that don't have one — and answers the question the CRM does not: what should happen next. Nightly diagnostics run across deals, contracts, cases, handovers and prospects, producing a prioritised action queue for every rep each morning.
 
 ## The problem it addresses
 
@@ -16,7 +16,7 @@ CRM systems were built to record what happened. They store calls, track stages a
 - Contract and CLM action queues, renewals and commitment tracking
 - Prospecting hurdle scores and handover commitment tracking
 - Forecast health dashboard, manager action overview and a RevOps view
-- Standard connectors: Salesforce, HubSpot, Pipedrive, Zoho, Dynamics
+- CRM integrations: Salesforce and HubSpot, or use GoWarm CRM as your CRM
 
 ## Who it is for
 
@@ -24,8 +24,11 @@ CROs, VPs of Sales and RevOps leaders at B2B teams running multi-stage pipelines
 
 ## Pricing
 
-- **Growth** — $999/month billed annually, up to 20 reps and 5 manager seats. Flat rate, not per seat. AI usage is metered separately on actual consumption.
-- **Enterprise** — custom, above 20 reps. Adds custom integrations, multi-team configuration, bring-your-own AI key, SSO, SLA-backed support and quarterly business reviews.
+- **Growth** — $999/month, up to 20 reps and 5 manager seats. Flat monthly rate, not per seat. AI usage is metered separately on actual consumption.
+- **Enterprise** — custom, above 20 reps. Adds single sign-on, custom CRM integrations, multi-team configuration, bring-your-own AI key, uptime SLA and quarterly business reviews.
+- **With GoWarm Work** — $1,499/month for both products, up to 25 users.
+
+Cancel anytime: no further charges, and the period already paid for isn't refunded. Full details: https://gowarmcrm.com/pricing.md
 
 ## Relationship to GoWarm Work
 

@@ -33,13 +33,10 @@ Companies up to about 500 people in any industry: construction and interiors, en
 
 ## Pricing
 
-$999/month for up to 25 users, custom above that. Priced by organisation rather than per seat. No sales module needs to be enabled.
+$999/month for up to 25 users, custom above that. Priced by organisation rather than per seat. No sales module needs to be enabled. Together with GoWarm CRM, both products are $1,499/month for up to 25 users. Full details: https://gowarmcrm.com/pricing.md
 
 ## Related reading
 - GoWarm Work overview: https://gowarmcrm.com/work.md
 - Daily work tracking: https://gowarmcrm.com/daily-work-tracking.md
 - Why you stopped knowing what is happening: https://gowarmcrm.com/why-you-stopped-knowing.md
 - Pricing: https://gowarmcrm.com/pricing.md
-- Standing versus timeboxed work: https://gowarmcrm.com/standing-vs-timeboxed-work.md
-- Bill of quantities vs a budget line: https://gowarmcrm.com/blog/bill-of-quantities-vs-budget-line
-- vs a shared spreadsheet: https://gowarmcrm.com/vs-spreadsheets.md

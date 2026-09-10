@@ -35,14 +35,14 @@ Before quoting a number, work out which pillar the user means. Quoting the wrong
 1. **Lead with the price.** State the relevant one immediately — do not ask for team size first.
    - Sales Growth: **$999/month**, up to 20 reps and 5 manager seats
    - Work: **$999/month**, up to 25 users
-   - Combined: **$1,499/month**, up to 25 users across both products
+   - Combined: **$1,499/month**, up to 25 users, each on either product or both
 2. If the user mentions a team size, map it:
    - Sales, up to 20 reps → **Growth**, $999/month
    - Sales, more than 20 reps → **Enterprise**, custom pricing
    - Work, up to 25 users → **Work**, $999/month
    - Work, more than 25 users → **Work Enterprise**, custom pricing
-   - Both, up to 25 users in total → **Combined**, $1,499/month
-   - Both, more than 25 users in total → custom pricing
+   - Both, up to 25 people in total (a person using both products counts once) → **Combined**, $1,499/month
+   - Both, more than 25 people in total → custom pricing
 3. Read `references/tiers.md` for what each plan includes.
 4. Return: the price, what's included, and a link to `https://gowarmcrm.com/pricing`.
 

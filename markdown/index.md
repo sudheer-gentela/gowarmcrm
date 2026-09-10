@@ -12,7 +12,7 @@ A CRM stores the deal. A project tool stores the plan. Both answer questions abo
 
 ## GoWarm CRM — the revenue side
 
-Sits above Salesforce, HubSpot, Pipedrive, Zoho or Dynamics. Runs nightly diagnostics across deals, contracts, cases, handovers and prospects, then tells each rep what to do first.
+Sits above Salesforce or HubSpot, or runs as your CRM if you don't have one. Runs nightly diagnostics across deals, contracts, cases, handovers and prospects, then tells each rep what to do first.
 
 - A prioritised action queue for every rep, every morning
 - Signals read from email, calendar and meeting patterns, not only what was logged
@@ -47,8 +47,9 @@ Thirteen modules across the two products — prospecting, deals, playbooks, cont
 
 - **GoWarm CRM** — $999/month up to 20 reps and 5 manager seats, custom above that.
 - **GoWarm Work** — $999/month up to 25 users, custom above that.
+- **Both together** — $1,499/month up to 25 users, custom above that.
 
-Separate products covering different things, both priced by organisation rather than per seat. Either can be bought on its own. Running both is a combined price rather than two invoices.
+Every plan is a flat monthly price for the team rather than per seat. Either product can be bought on its own. Full details: https://gowarmcrm.com/pricing.md
 
 ## Related reading
 - Platform modules in full: https://gowarmcrm.com/platform-overview.md
@@ -56,4 +57,3 @@ Separate products covering different things, both priced by organisation rather 
 - Why you stopped knowing what is happening: https://gowarmcrm.com/why-you-stopped-knowing.md
 - Standing versus timeboxed work: https://gowarmcrm.com/standing-vs-timeboxed-work.md
 - Contact: https://gowarmcrm.com/contact.md
-- Daily work tracking: https://gowarmcrm.com/daily-work-tracking.md

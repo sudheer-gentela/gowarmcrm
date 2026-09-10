@@ -1,6 +1,6 @@
 # GoWarmCRM
 
-> The execution application for your GTM team. GoWarmCRM sits on top of Salesforce, HubSpot, Pipedrive, and other CRMs to operationalize sales playbooks, surface deal actions, and close the gap between defined process and rep behavior. It reads behavioral signals from email, calendar, and meeting patterns — not just what reps logged — to tell teams what to do next on every deal, every morning.
+> The execution application for your GTM team. GoWarmCRM sits on top of Salesforce or HubSpot — or runs as the CRM for teams without one — to operationalize sales playbooks, surface deal actions, and close the gap between defined process and rep behavior. It reads behavioral signals from email, calendar, and meeting patterns — not just what reps logged — to tell teams what to do next on every deal, every morning.
 
 GoWarmCRM has two pillars on one platform, enabled per organisation. **Sales execution** is built for B2B sales teams running multi-stage pipelines (typically SaaS, professional services, or complex field sales) with deal values above $20K, sales cycles longer than 30 days, and 5–200 reps; primary buyers are CROs, VPs of Sales, and RevOps leaders. **GoWarm Work** is project and daily work tracking for companies up to 500 people in any industry — construction, manufacturing, services, agencies, professional firms — where nobody's full-time job is keeping the record of work truthful; primary buyers are founders, CEOs and managing directors. Either pillar can run without the other.
 
@@ -8,7 +8,7 @@ GoWarmCRM has two pillars on one platform, enabled per organisation. **Sales exe
 - [Homepage](https://gowarmcrm.com/index.md): Category overview, the execution gap, who it's for
 - [How It Works](https://gowarmcrm.com/how-it-works.md): Nightly diagnostic engine, action queue, AI-drafted next actions
 - [Problems We Solve](https://gowarmcrm.com/problems.md): Deal rot, forecast blindness, handoff gaps, expansion blindness, playbook abandonment
-- [Pricing](https://gowarmcrm.com/pricing.md): Tiers, what's included, comparison vs. building in-house
+- [Pricing](https://gowarmcrm.com/pricing.md): GoWarm CRM $999/month up to 20 reps, GoWarm Work $999/month up to 25 users, both together $1,499/month up to 25 users; what each includes
 - [Execution Gap](https://gowarmcrm.com/execution-gap.md): Why CRMs track but don't execute, and the structural fix
 - [Platform Overview](https://gowarmcrm.com/platform-overview.md): All five modules — Prospecting, Sales, CLM, Service, Handover
 
@@ -16,7 +16,7 @@ GoWarmCRM has two pillars on one platform, enabled per organisation. **Sales exe
 - [GoWarm CRM](https://gowarmcrm.com/sales.md): The sales execution pillar — nightly diagnostics across deals, contracts, cases, handovers and prospects, a prioritised action queue for every rep, playbooks that surface at the stage transition, and forecast health for managers and RevOps
 
 ## GoWarm Work — projects and daily work
-- [GoWarm Work](https://gowarmcrm.com/work.md): The projects and daily work pillar — stages with gates, task dependencies, a baseline frozen at start, evidence required to close, Bill of Quantities with an append-only spend ledger, timeboxed versus standing work, and daily work written once by the person doing it and read by their own day, the project task and the manager rollup. Pricing: $999/month up to 25 users, custom above that
+- [GoWarm Work](https://gowarmcrm.com/work.md): The projects and daily work pillar — stages with gates, task dependencies, a baseline frozen at start, evidence required to close, Bill of Quantities with an append-only spend ledger, timeboxed versus standing work, and daily work written once by the person doing it and read by their own day, the project task and the manager rollup. Pricing: $999/month up to 25 users, custom above that; $1,499/month for both products up to 25 users
 - [Why you stopped knowing what's happening in your own company](https://gowarmcrm.com/why-you-stopped-knowing.md): The argument — why status decks, weekly reviews, dashboards and project tools all report on the reporting rather than the work, why tools that generate work accumulate past the point of being read, and the three properties a record has to have to be worth trusting
 - [GoWarm Work vs a shared spreadsheet](https://gowarmcrm.com/vs-spreadsheets.md): Where a shared sheet stops working: the six things a spreadsheet structurally cannot do — tell absence from silence, enforce a sequence, require evidence, aggregate free text, keep a ledger, or remember what a date used to be — what replaces each, and when the sheet is still the right answer
 - [Standing versus timeboxed work](https://gowarmcrm.com/standing-vs-timeboxed-work.md): Work has two independent axes: customer or internal, and does it end. Why forcing standing work such as retainers, maintenance and compliance into a finite project shape corrupts percentage complete and overdue counts, the three common workarounds and why each fails, and how to tell the two apart
@@ -36,7 +36,7 @@ GoWarmCRM has two pillars on one platform, enabled per organisation. **Sales exe
 - [Part 5 · Relationship selling in the AI era — the synthesis](https://gowarmcrm.com/ai-shift/relationship-selling.md): Why relationship selling is not dead but being reborn, why the buyer's scarce resource has moved from information to attention, why the best sellers have always done this motion but only now can it scale, and what the integrated picture across product, services, and marketing commits the firm to on Monday morning
 
 ## Integrations
-- [CRM Integration](https://gowarmcrm.com/crm-integration.md): Salesforce, HubSpot, Pipedrive, Zoho, Dynamics
+- [CRM Integration](https://gowarmcrm.com/crm-integration.md): Salesforce and HubSpot
 - [Salesforce Integration](https://gowarmcrm.com/salesforce-integration.md): Adapter pattern, deterministic ID-based sync, write-back
 
 ## Optional

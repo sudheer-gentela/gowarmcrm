@@ -40,9 +40,6 @@ GoWarmCRM uses an adapter pattern with deterministic external-ID matching to syn
 
 - Salesforce (Phase 1 production-ready; Phase 2 + 3 in development)
 - HubSpot
-- Microsoft Dynamics
-- Pipedrive
-- Zoho
 
 Field-level sync is governed by a per-org `field_map` — no rigid schema assumptions.
 
