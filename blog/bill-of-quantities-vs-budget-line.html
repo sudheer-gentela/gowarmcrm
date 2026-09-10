@@ -228,7 +228,7 @@
 
           <p>Rates change. Materials move, a supplier renegotiates, a contract has an escalation clause. If the rate lives only on the bill line and the value of past work is calculated against the current rate, then changing a rate silently rewrites what everything before it cost.</p>
 
-          <p>This is not a hypothetical failure. It is the standard behaviour of a spreadsheet with a rate column and a formula, and it means that the moment a rate is updated, every historical figure in the project quietly becomes wrong — in a way that produces no error, no warning, and no visible change to anything except the totals.</p>
+          <p>This is not a hypothetical failure. It is the standard behaviour of <a href="/vs-spreadsheets">a spreadsheet with a rate column and a formula</a>, and it means that the moment a rate is updated, every historical figure in the project quietly becomes wrong — in a way that produces no error, no warning, and no visible change to anything except the totals.</p>
 
           <p>The fix is that each booking carries the rate it was made at. Work booked in March is valued at March's rate forever, regardless of what happens to the rate afterwards. The line's future work uses the new rate. Both facts are true and both are preserved.</p>
 
@@ -266,7 +266,7 @@
 
           <p>None of this requires sophisticated software. It requires a data model that refuses to overwrite: entries are added, never changed; totals are derived, never stored; the rate travels with the booking; and change to scope is recorded as change rather than absorbed into the original.</p>
 
-          <p>Most project tools cannot do this, not because it is difficult but because they were designed by people whose projects did not have bills. The result is a category of software that handles schedule well and money badly, which is an odd place to end up given that money is usually the reason the schedule matters.</p>
+          <p><a href="/project-tracking-software-small-business">Most project tools cannot do this</a>, not because it is difficult but because they were designed by people whose projects did not have bills. The result is a category of software that handles schedule well and money badly, which is an odd place to end up given that money is usually the reason the schedule matters.</p>
 
           <p><a href="/work">GoWarm Work</a> treats the bill of quantities as a first-class part of the project rather than an export. Increments, rate snapshots, corrections as reversals, and approved variations kept apart from the original bill — with a negative figure in Left meaning that line has overrun what was sanctioned for it, visibly, on the day it happens.</p>
 

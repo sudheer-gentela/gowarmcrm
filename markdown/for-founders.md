@@ -54,3 +54,7 @@ GoWarm CRM: $999/month up to 20 reps, custom above. GoWarm Work: $999/month up t
 - GoWarm Work: https://gowarmcrm.com/work.md
 - Why you stopped knowing what is happening: https://gowarmcrm.com/why-you-stopped-knowing.md
 - Pricing: https://gowarmcrm.com/pricing.md
+- Project tracking for small business: https://gowarmcrm.com/project-tracking-software-small-business.md
+- Daily work tracking: https://gowarmcrm.com/daily-work-tracking.md
+- Standing versus timeboxed work: https://gowarmcrm.com/standing-vs-timeboxed-work.md
+- Bill of quantities vs a budget line: https://gowarmcrm.com/blog/bill-of-quantities-vs-budget-line

@@ -32,3 +32,4 @@ $999/month for up to 25 users, custom above that, priced by organisation rather 
 - Daily work tracking: https://gowarmcrm.com/daily-work-tracking.md
 - Project tracking for small business: https://gowarmcrm.com/project-tracking-software-small-business.md
 - Standing versus timeboxed work: https://gowarmcrm.com/standing-vs-timeboxed-work.md
+- Bill of quantities vs a budget line: https://gowarmcrm.com/blog/bill-of-quantities-vs-budget-line

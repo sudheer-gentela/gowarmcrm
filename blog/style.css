@@ -230,6 +230,15 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   color: var(--ink);
 }
+/* gw: visible links inside article bodies */
+.article-body p a,
+.article-body li a {
+  color: var(--rust);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.article-body p a:hover,
+.article-body li a:hover { color: var(--rust-dark); }
 .article-body .diagnostic-box {
   background: var(--cream-2);
   border-left: 4px solid var(--rust);

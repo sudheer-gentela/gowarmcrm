@@ -32,3 +32,6 @@ No timers, screenshots, idle detection, keystroke logging or productivity scores
 - GoWarm CRM: https://gowarmcrm.com/sales.md
 - GoWarm Work: https://gowarmcrm.com/work.md
 - Pricing: https://gowarmcrm.com/pricing.md
+- Project tracking for small business: https://gowarmcrm.com/project-tracking-software-small-business.md
+- Standing versus timeboxed work: https://gowarmcrm.com/standing-vs-timeboxed-work.md
+- Daily work tracking: https://gowarmcrm.com/daily-work-tracking.md

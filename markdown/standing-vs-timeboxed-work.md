@@ -50,3 +50,5 @@ Standing work is not second-class — it is fully tracked and logged against, an
 - Project tracking for small business: https://gowarmcrm.com/project-tracking-software-small-business.md
 - vs a shared spreadsheet: https://gowarmcrm.com/vs-spreadsheets.md
 - Why you stopped knowing what is happening: https://gowarmcrm.com/why-you-stopped-knowing.md
+- The retainer that was 90% complete for two years: https://gowarmcrm.com/blog/retainer-ninety-percent-complete
+- Daily work tracking: https://gowarmcrm.com/daily-work-tracking.md

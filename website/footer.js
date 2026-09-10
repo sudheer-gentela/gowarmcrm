@@ -4,7 +4,7 @@
   <style>
     .footer-grid-gw {
       display: grid;
-      grid-template-columns: 220px 1fr 150px 130px;
+      grid-template-columns: 220px 1fr 200px 130px;
       gap: 32px;
       margin-bottom: 48px;
     }
@@ -17,7 +17,8 @@
       white-space: nowrap;
     }
     @media (max-width: 1100px) {
-      .footer-grid-gw { grid-template-columns: 220px 1fr 150px 130px; }
+      .footer-grid-gw { grid-template-columns: 170px 1fr 190px 120px; gap: 24px; }
+      .footer-col-resources ul { gap: 0 20px; }
     }
     @media (max-width: 960px) {
       .footer-grid-gw { grid-template-columns: 1fr 1fr; }
@@ -67,7 +68,12 @@
         <ul>
           <li><a href="/work">Projects &amp; Daily Work</a></li>
           <li><a href="/why-you-stopped-knowing">Why You Stopped Knowing</a></li>
-          <li><a href="/work">Work Pricing</a></li>
+          <li><a href="/for-founders">For Founders</a></li>
+          <li><a href="/daily-work-tracking">Daily Work Tracking</a></li>
+          <li><a href="/project-tracking-software-small-business">Project Tracking for SMBs</a></li>
+          <li><a href="/standing-vs-timeboxed-work">Standing vs Timeboxed</a></li>
+          <li><a href="/vs-spreadsheets">Work vs Spreadsheets</a></li>
+          <li><a href="/work#pricing">Work Pricing</a></li>
           <li><a href="/contact?src=work">Book a Walkthrough</a></li>
         </ul>
       </div>

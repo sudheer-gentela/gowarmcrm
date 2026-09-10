@@ -63,3 +63,7 @@ It will not count hours, take screenshots, detect idleness or produce a producti
 - Sales execution side of the platform: https://gowarmcrm.com/index.md
 - GoWarm Insights: https://gowarmcrm.com/blog
 - Contact: https://gowarmcrm.com/contact.md
+- When your tool generates work: https://gowarmcrm.com/blog/when-your-tool-generates-work
+- Project tracking for small business: https://gowarmcrm.com/project-tracking-software-small-business.md
+- Bill of quantities vs a budget line: https://gowarmcrm.com/blog/bill-of-quantities-vs-budget-line
+- Daily work tracking: https://gowarmcrm.com/daily-work-tracking.md

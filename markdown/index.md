@@ -56,3 +56,4 @@ Separate products covering different things, both priced by organisation rather 
 - Why you stopped knowing what is happening: https://gowarmcrm.com/why-you-stopped-knowing.md
 - Standing versus timeboxed work: https://gowarmcrm.com/standing-vs-timeboxed-work.md
 - Contact: https://gowarmcrm.com/contact.md
+- Daily work tracking: https://gowarmcrm.com/daily-work-tracking.md
